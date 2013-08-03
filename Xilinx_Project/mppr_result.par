@@ -1,0 +1,14 @@
+
+Constraints file: GameOfLife.pcf.
+
+Level/      Design      Timing      Number      Number     Number      Number      Run         NCD
+Cost [ncd]  Score       Score       Unrouted    Errors     Warnings    Infos       Time        Status
+----------  ------      --------    --------    -----      --------    ------     ------      ------------
+H_H_2   *   260         0           0           0           7           1           01:05       Complete        
+H_H_3   *   266         0           0           0           7           1           01:08       Complete        
+H_H_1   *   495181      0           4307        0           10          0           0:12        Complete        
+
+
+* : Design saved.
+
+PAR done!

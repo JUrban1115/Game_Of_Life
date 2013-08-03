@@ -1,0 +1,593 @@
+Release 11.1 ngdbuild L.33 (nt)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\11.1\ISE\bin\nt\unwrapped\ngdbuild.exe -ise
+GameOfLife.ise -intstyle ise -dd _ngo -aul -nt timestamp -i -p xc3s200-ft256-4
+GameOfLife.ngc GameOfLife.ngd
+
+Reading NGO file "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401
+Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/GameOfLife.ngc" ...
+Reading in constraint information from 'system.ucf'...
+Gathering constraint information from source properties...
+Done.
+
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:59 - Constraint <NET "socket_clk"	LOC = "D9";>
+   [system.ucf(4)]: NET "socket_clk" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "btn1"			LOC = "M14";>
+   [system.ucf(9)]: NET "btn1" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "rs232_rx"			LOC = "T13";>
+   [system.ucf(52)]: NET "rs232_rx" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "rs232_tx"			LOC = "R13";>
+   [system.ucf(53)]: NET "rs232_tx" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "rs232_rxda"		LOC = "N10";>
+   [system.ucf(54)]: NET "rs232_rxda" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "rs232_txda"		LOC = "T14";>
+   [system.ucf(55)]: NET "rs232_txda" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_db0"			LOC = "N7";>
+   [system.ucf(118)]: NET "a1_db0" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_db1"			LOC = "T8";>
+   [system.ucf(119)]: NET "a1_db1" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_db2"			LOC = "R6";>
+   [system.ucf(120)]: NET "a1_db2" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_db3"			LOC = "T5";>
+   [system.ucf(121)]: NET "a1_db3" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_db4"			LOC = "R5";>
+   [system.ucf(122)]: NET "a1_db4" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_db5"			LOC = "C2";>
+   [system.ucf(123)]: NET "a1_db5" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_db6"			LOC = "C1";>
+   [system.ucf(124)]: NET "a1_db6" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_db7"			LOC = "B1";>
+   [system.ucf(125)]: NET "a1_db7" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_adr0"			LOC = "N8";>
+   [system.ucf(126)]: NET "a1_adr0" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_adr1"			LOC = "L5";>
+   [system.ucf(127)]: NET "a1_adr1" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_adr2"			LOC = "N3";>
+   [system.ucf(128)]: NET "a1_adr2" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_adr3"			LOC = "M4";>
+   [system.ucf(129)]: NET "a1_adr3" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_adr4"			LOC = "M3";>
+   [system.ucf(130)]: NET "a1_adr4" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_adr5"			LOC = "L4";>
+   [system.ucf(131)]: NET "a1_adr5" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_mdb0"			LOC = "M10";>
+   [system.ucf(132)]: NET "a1_mdb0" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_mdb1"			LOC = "F3";>
+   [system.ucf(133)]: NET "a1_mdb1" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_mdb2"			LOC = "G4";>
+   [system.ucf(134)]: NET "a1_mdb2" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_mdb3"			LOC = "E3";>
+   [system.ucf(135)]: NET "a1_mdb3" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_mdb4"			LOC = "F4";>
+   [system.ucf(136)]: NET "a1_mdb4" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_mdb5"			LOC = "G5";>
+   [system.ucf(137)]: NET "a1_mdb5" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_mdb6"			LOC = "E4";>
+   [system.ucf(138)]: NET "a1_mdb6" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_mdb7"			LOC = "H4";>
+   [system.ucf(139)]: NET "a1_mdb7" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_mastb"			LOC = "H3";>
+   [system.ucf(140)]: NET "a1_mastb" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_mdstb"			LOC = "J3";>
+   [system.ucf(141)]: NET "a1_mdstb" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_mwrite"		LOC = "J4";>
+   [system.ucf(142)]: NET "a1_mwrite" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_mwait"			LOC = "K5";>
+   [system.ucf(143)]: NET "a1_mwait" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_mreset"		LOC = "K3";>
+   [system.ucf(144)]: NET "a1_mreset" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_mint"			LOC = "L3";>
+   [system.ucf(145)]: NET "a1_mint" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_we"				LOC = "G3";>
+   [system.ucf(146)]: NET "a1_we" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_ce"				LOC = "K4";>
+   [system.ucf(147)]: NET "a1_ce" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_lsbclk"		LOC = "M7";>
+   [system.ucf(148)]: NET "a1_lsbclk" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_csa"			LOC = "P9";>
+   [system.ucf(149)]: NET "a1_csa" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_tms"			LOC = "C13";>
+   [system.ucf(150)]: NET "a1_tms" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a1_tck"			LOC = "C14";>
+   [system.ucf(151)]: NET "a1_tck" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_io1"			LOC = "E6";>
+   [system.ucf(153)]: NET "a2_io1" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_io2"			LOC = "D5";>
+   [system.ucf(154)]: NET "a2_io2" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_io3"			LOC = "C5";>
+   [system.ucf(155)]: NET "a2_io3" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_io4"			LOC = "D6";>
+   [system.ucf(156)]: NET "a2_io4" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_io5"			LOC = "C6";>
+   [system.ucf(157)]: NET "a2_io5" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_io6"			LOC = "E7";>
+   [system.ucf(158)]: NET "a2_io6" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_io7"			LOC = "C7";>
+   [system.ucf(159)]: NET "a2_io7" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_io8"			LOC = "D7";>
+   [system.ucf(160)]: NET "a2_io8" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_io9"			LOC = "C8";>
+   [system.ucf(161)]: NET "a2_io9" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_io10"			LOC = "D8";>
+   [system.ucf(162)]: NET "a2_io10" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_io11"			LOC = "C9";>
+   [system.ucf(163)]: NET "a2_io11" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_io12"			LOC = "D10";>
+   [system.ucf(164)]: NET "a2_io12" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_io13"			LOC = "A3";>
+   [system.ucf(165)]: NET "a2_io13" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_io14"			LOC = "B4";>
+   [system.ucf(166)]: NET "a2_io14" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_io15"			LOC = "A4";>
+   [system.ucf(167)]: NET "a2_io15" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_io16"			LOC = "B5";>
+   [system.ucf(168)]: NET "a2_io16" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_io17"			LOC = "A5";>
+   [system.ucf(169)]: NET "a2_io17" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_io18"			LOC = "B6";>
+   [system.ucf(170)]: NET "a2_io18" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_mdb0"			LOC = "B7";>
+   [system.ucf(171)]: NET "a2_mdb0" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_mdb1"			LOC = "A7";>
+   [system.ucf(172)]: NET "a2_mdb1" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_mdb2"			LOC = "B8";>
+   [system.ucf(173)]: NET "a2_mdb2" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_mdb3"			LOC = "A8";>
+   [system.ucf(174)]: NET "a2_mdb3" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_mdb4"			LOC = "A9";>
+   [system.ucf(175)]: NET "a2_mdb4" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_mdb5"			LOC = "B10";>
+   [system.ucf(176)]: NET "a2_mdb5" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_mdb6"			LOC = "A10";>
+   [system.ucf(177)]: NET "a2_mdb6" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_mdb7"			LOC = "B11";>
+   [system.ucf(178)]: NET "a2_mdb7" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_mastb"			LOC = "B12";>
+   [system.ucf(179)]: NET "a2_mastb" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_mdstb"			LOC = "A12";>
+   [system.ucf(180)]: NET "a2_mdstb" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_mwrite"		LOC = "B13";>
+   [system.ucf(181)]: NET "a2_mwrite" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_mwait"			LOC = "A13";>
+   [system.ucf(182)]: NET "a2_mwait" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_mreset"		LOC = "B14";>
+   [system.ucf(183)]: NET "a2_mreset" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_mint"			LOC = "D9";>
+   [system.ucf(184)]: NET "a2_mint" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_progb"			LOC = "B3";>
+   [system.ucf(185)]: NET "a2_progb" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_done"			LOC = "R14";>
+   [system.ucf(186)]: NET "a2_done" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_init"			LOC = "N9";>
+   [system.ucf(187)]: NET "a2_init" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_cclk"			LOC = "T15";>
+   [system.ucf(188)]: NET "a2_cclk" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "a2_din"			LOC = "M11";>
+   [system.ucf(189)]: NET "a2_din" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_db0"			LOC = "T3";>
+   [system.ucf(191)]: NET "b1_db0" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_db1"			LOC = "N11";>
+   [system.ucf(192)]: NET "b1_db1" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_db2"			LOC = "P10";>
+   [system.ucf(193)]: NET "b1_db2" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_db3"			LOC = "R10";>
+   [system.ucf(194)]: NET "b1_db3" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_db4"			LOC = "T7";>
+   [system.ucf(195)]: NET "b1_db4" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_db5"			LOC = "R7";>
+   [system.ucf(196)]: NET "b1_db5" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_db6"			LOC = "N6";>
+   [system.ucf(197)]: NET "b1_db6" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_db7"			LOC = "M6";>
+   [system.ucf(198)]: NET "b1_db7" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_adr0"			LOC = "C10";>
+   [system.ucf(199)]: NET "b1_adr0" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_adr1"			LOC = "E10";>
+   [system.ucf(200)]: NET "b1_adr1" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_adr2"			LOC = "C11";>
+   [system.ucf(201)]: NET "b1_adr2" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_adr3"			LOC = "D11";>
+   [system.ucf(202)]: NET "b1_adr3" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_adr4"			LOC = "C12";>
+   [system.ucf(203)]: NET "b1_adr4" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_adr5"			LOC = "D12";>
+   [system.ucf(204)]: NET "b1_adr5" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_mdb0"			LOC = "C16";>
+   [system.ucf(205)]: NET "b1_mdb0" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_mdb1"			LOC = "D15";>
+   [system.ucf(206)]: NET "b1_mdb1" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_mdb2"			LOC = "D16";>
+   [system.ucf(207)]: NET "b1_mdb2" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_mdb3"			LOC = "E15";>
+   [system.ucf(208)]: NET "b1_mdb3" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_mdb4"			LOC = "E16";>
+   [system.ucf(209)]: NET "b1_mdb4" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_mdb5"			LOC = "F15";>
+   [system.ucf(210)]: NET "b1_mdb5" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_mdb6"			LOC = "G15";>
+   [system.ucf(211)]: NET "b1_mdb6" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_mdb7"			LOC = "G16";>
+   [system.ucf(212)]: NET "b1_mdb7" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_mastb"			LOC = "H15";>
+   [system.ucf(213)]: NET "b1_mastb" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_mdstb"			LOC = "H16";>
+   [system.ucf(214)]: NET "b1_mdstb" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_mwrite"		LOC = "J16";>
+   [system.ucf(215)]: NET "b1_mwrite" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_mwait"			LOC = "K16";>
+   [system.ucf(216)]: NET "b1_mwait" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_mreset"		LOC = "K15";>
+   [system.ucf(217)]: NET "b1_mreset" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_mint"			LOC = "L3";>
+   [system.ucf(218)]: NET "b1_mint" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_we"				LOC = "E11";>
+   [system.ucf(219)]: NET "b1_we" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_oe"				LOC = "B16";>
+   [system.ucf(220)]: NET "b1_oe" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_cs"				LOC = "R3";>
+   [system.ucf(221)]: NET "b1_cs" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_clk"			LOC = "C15";>
+   [system.ucf(222)]: NET "b1_clk" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_progb"			LOC = "B3";>
+   [system.ucf(223)]: NET "b1_progb" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "b1_din"			LOC = "M11";>
+   [system.ucf(224)]: NET "b1_din" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+Done...
+Checking Partitions ...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 127064 kilobytes
+
+Writing NGD file "GameOfLife.ngd" ...
+Total REAL time to NGDBUILD completion:  5 sec
+Total CPU time to NGDBUILD completion:   4 sec
+
+Writing NGDBUILD log file "GameOfLife.bld"...

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="LIT" num="243" delta="unknown" >Logical network <arg fmt="%s" index="1">ps2_clk_IBUF</arg> has no load.
+</msg>
+
+<msg type="warning" file="LIT" num="395" delta="unknown" >The above <arg fmt="%s" index="1">warning</arg> message <arg fmt="%s" index="2">base_net_load_rule</arg> is repeated <arg fmt="%d" index="3">4</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="4">ps2_data_IBUF,
+swts_i&lt;3&gt;_IBUF,
+swts_i&lt;2&gt;_IBUF,
+swts_i&lt;1&gt;_IBUF</arg>
+To see the details of these <arg fmt="%s" index="5">warning</arg> messages, please use the -detail switch.
+</msg>
+
+<msg type="info" file="MapLib" num="562" delta="unknown" >No environment variables are currently set.
+</msg>
+
+<msg type="info" file="MapLib" num="331" delta="unknown" >Block RAM optimization summary:
+</msg>
+
+<msg type="info" file="MapLib" num="329" delta="unknown" >FF with output &quot;<arg fmt="%s" index="1">wbgm/dat_o_0</arg>&quot; was mapped to the output of a Block RAM.
+</msg>
+
+<msg type="info" file="MapLib" num="330" delta="unknown" >This Block RAM absorbed <arg fmt="%d" index="1">5</arg> LUTs and replaced <arg fmt="%d" index="2">4</arg> levels of LUT logic.
+</msg>
+
+<msg type="info" file="MapLib" num="329" delta="unknown" >FF with output &quot;<arg fmt="%s" index="1">wbgm/dat_o_1</arg>&quot; was mapped to the output of a Block RAM.
+</msg>
+
+<msg type="info" file="MapLib" num="330" delta="unknown" >This Block RAM absorbed <arg fmt="%d" index="1">5</arg> LUTs and replaced <arg fmt="%d" index="2">4</arg> levels of LUT logic.
+</msg>
+
+<msg type="info" file="MapLib" num="329" delta="unknown" >FF with output &quot;<arg fmt="%s" index="1">wbgm/dat_o_20</arg>&quot; was mapped to the output of a Block RAM.
+</msg>
+
+<msg type="info" file="MapLib" num="330" delta="unknown" >This Block RAM absorbed <arg fmt="%d" index="1">5</arg> LUTs and replaced <arg fmt="%d" index="2">3</arg> levels of LUT logic.
+</msg>
+
+<msg type="info" file="MapLib" num="329" delta="unknown" >FF with output &quot;<arg fmt="%s" index="1">wbgm/dat_o_24</arg>&quot; was mapped to the output of a Block RAM.
+</msg>
+
+<msg type="info" file="MapLib" num="330" delta="unknown" >This Block RAM absorbed <arg fmt="%d" index="1">5</arg> LUTs and replaced <arg fmt="%d" index="2">3</arg> levels of LUT logic.
+</msg>
+
+<msg type="info" file="MapLib" num="329" delta="unknown" >FF with output &quot;<arg fmt="%s" index="1">wbgm/dat_o_16</arg>&quot; was mapped to the output of a Block RAM.
+</msg>
+
+<msg type="info" file="MapLib" num="330" delta="unknown" >This Block RAM absorbed <arg fmt="%d" index="1">5</arg> LUTs and replaced <arg fmt="%d" index="2">3</arg> levels of LUT logic.
+</msg>
+
+<msg type="info" file="MapLib" num="329" delta="unknown" >FF with output &quot;<arg fmt="%s" index="1">wbgm/dat_o_28</arg>&quot; was mapped to the output of a Block RAM.
+</msg>
+
+<msg type="info" file="MapLib" num="330" delta="unknown" >This Block RAM absorbed <arg fmt="%d" index="1">5</arg> LUTs and replaced <arg fmt="%d" index="2">3</arg> levels of LUT logic.
+</msg>
+
+<msg type="info" file="MapLib" num="329" delta="unknown" >FF with output &quot;<arg fmt="%s" index="1">wbgm/dat_o_4</arg>&quot; was mapped to the output of a Block RAM.
+</msg>
+
+<msg type="info" file="MapLib" num="330" delta="unknown" >This Block RAM absorbed <arg fmt="%d" index="1">5</arg> LUTs and replaced <arg fmt="%d" index="2">3</arg> levels of LUT logic.
+</msg>
+
+<msg type="info" file="MapLib" num="329" delta="unknown" >FF with output &quot;<arg fmt="%s" index="1">wbgm/dat_o_12</arg>&quot; was mapped to the output of a Block RAM.
+</msg>
+
+<msg type="info" file="MapLib" num="330" delta="unknown" >This Block RAM absorbed <arg fmt="%d" index="1">5</arg> LUTs and replaced <arg fmt="%d" index="2">3</arg> levels of LUT logic.
+</msg>
+
+<msg type="info" file="MapLib" num="329" delta="unknown" >FF with output &quot;<arg fmt="%s" index="1">wbgm/dat_o_8</arg>&quot; was mapped to the output of a Block RAM.
+</msg>
+
+<msg type="info" file="MapLib" num="330" delta="unknown" >This Block RAM absorbed <arg fmt="%d" index="1">5</arg> LUTs and replaced <arg fmt="%d" index="2">3</arg> levels of LUT logic.
+</msg>
+
+<msg type="info" file="MapLib" num="329" delta="unknown" >FF with output &quot;<arg fmt="%s" index="1">wbgm/nextB_79</arg>&quot; was mapped to the output of a Block RAM.
+</msg>
+
+<msg type="info" file="MapLib" num="330" delta="unknown" >This Block RAM absorbed <arg fmt="%d" index="1">5</arg> LUTs and replaced <arg fmt="%d" index="2">3</arg> levels of LUT logic.
+</msg>
+
+<msg type="info" file="MapLib" num="329" delta="unknown" >FF with output &quot;<arg fmt="%s" index="1">wbgm/nextB_40</arg>&quot; was mapped to the output of a Block RAM.
+</msg>
+
+<msg type="info" file="MapLib" num="330" delta="unknown" >This Block RAM absorbed <arg fmt="%d" index="1">5</arg> LUTs and replaced <arg fmt="%d" index="2">3</arg> levels of LUT logic.
+</msg>
+
+<msg type="info" file="MapLib" num="332" delta="unknown" >In total, <arg fmt="%d" index="1">55</arg> LUTs were mapped to <arg fmt="%d" index="2">11</arg> Block RAMs.
+</msg>
+
+<msg type="info" file="LIT" num="244" delta="unknown" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
+</msg>
+
+<msg type="info" file="Pack" num="1716" delta="unknown" >Initializing temperature to <arg fmt="%0.3f" index="1">85.000</arg> Celsius. (default - Range: <arg fmt="%0.3f" index="2">0.000</arg> to <arg fmt="%0.3f" index="3">85.000</arg> Celsius)
+</msg>
+
+<msg type="info" file="Pack" num="1720" delta="unknown" >Initializing voltage to <arg fmt="%0.3f" index="1">1.140</arg> Volts. (default - Range: <arg fmt="%0.3f" index="2">1.140</arg> to <arg fmt="%0.3f" index="3">1.260</arg> Volts)
+</msg>
+
+<msg type="error" file="Place" num="375" delta="unknown" >The design does not fit in device.
+<arg fmt="%s" index="1"> Total LUT Utilization      : 3843 out of 3840
+ LUTs used as Logic         : 3843
+ LUTs used as Memory        : 0
+ FF Utilization             : 1941 out of 3840
+
+</arg>
+</msg>
+
+</messages>

@@ -1,0 +1,40 @@
+Release 11.1 Map L.33 (nt)
+Xilinx Map Application Log File for Design 'GameOfLife'
+
+Design Information
+------------------
+Command Line   : map -ise GameOfLife.ise -intstyle ise -p xc3s200-ft256-4
+-timing -logic_opt off -ol high -t 1 -register_duplication off -cm area -ir off
+-pr off -bp -power off -o GameOfLife_map.ncd GameOfLife.ngd GameOfLife.pcf 
+Target Device  : xc3s200
+Target Package : ft256
+Target Speed   : -4
+Mapper Version : spartan3 -- $Revision: 1.51 $
+Mapped Date    : Sun Mar 07 10:44:58 2010
+
+WARNING:LIT:243 - Logical network ps2_clk_IBUF has no load.
+WARNING:LIT:395 - The above warning message base_net_load_rule is repeated 4
+   more times for the following (max. 5 shown):
+   ps2_data_IBUF,
+   swts_i<3>_IBUF,
+   swts_i<2>_IBUF,
+   swts_i<1>_IBUF
+   To see the details of these warning messages, please use the -detail switch.
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 13 secs 
+Total CPU  time at the beginning of Placer: 10 secs 
+
+Phase 1.1  Initial Placement Analysis
+ERROR:Place:375 - The design does not fit in device.
+    Total LUT Utilization      : 3843 out of 3840
+    LUTs used as Logic         : 3843
+    LUTs used as Memory        : 0
+    FF Utilization             : 1941 out of 3840
+
+
+Phase 1.1  Initial Placement Analysis (Checksum:1092ca1) REAL time: 15 secs 
+

@@ -1,0 +1,7 @@
+vhdl work "wb_arbiter.vhd"
+vhdl work "clock_divider.vhd"
+vhdl work "wb_vga640x480.vhd"
+vhdl work "wb_intercon.vhd"
+vhdl work "wb_game.vhd"
+vhdl work "sramctl.vhd"
+vhdl work "GameOfLife.vhd"

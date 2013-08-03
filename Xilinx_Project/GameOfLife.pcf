@@ -1,0 +1,786 @@
+//! **************************************************************************
+// Written by: Map K.39 on Thu Dec 11 14:23:33 2008
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "segment<0>" LOCATE = SITE "P16" LEVEL 1;
+COMP "segment<1>" LOCATE = SITE "N16" LEVEL 1;
+COMP "segment<2>" LOCATE = SITE "F13" LEVEL 1;
+COMP "segment<3>" LOCATE = SITE "R16" LEVEL 1;
+COMP "segment<4>" LOCATE = SITE "P15" LEVEL 1;
+COMP "segment<5>" LOCATE = SITE "N15" LEVEL 1;
+COMP "segment<6>" LOCATE = SITE "G13" LEVEL 1;
+COMP "segment<7>" LOCATE = SITE "E14" LEVEL 1;
+COMP "btn0" LOCATE = SITE "M13" LEVEL 1;
+COMP "btn2" LOCATE = SITE "L13" LEVEL 1;
+COMP "ps2_clk" LOCATE = SITE "M16" LEVEL 1;
+PIN ps2_clk_pin<0> = BEL "ps2_clk" PINNAME PAD;
+PIN "ps2_clk_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "leds_o<0>" LOCATE = SITE "K12" LEVEL 1;
+COMP "leds_o<1>" LOCATE = SITE "P14" LEVEL 1;
+COMP "leds_o<2>" LOCATE = SITE "L12" LEVEL 1;
+COMP "leds_o<3>" LOCATE = SITE "N14" LEVEL 1;
+COMP "leds_o<4>" LOCATE = SITE "P13" LEVEL 1;
+COMP "leds_o<5>" LOCATE = SITE "N12" LEVEL 1;
+COMP "leds_o<6>" LOCATE = SITE "P12" LEVEL 1;
+COMP "leds_o<7>" LOCATE = SITE "P11" LEVEL 1;
+COMP "sram_io1<10>" LOCATE = SITE "F2" LEVEL 1;
+COMP "sram_io1<11>" LOCATE = SITE "H1" LEVEL 1;
+COMP "sram_io1<12>" LOCATE = SITE "J2" LEVEL 1;
+COMP "sram_io1<13>" LOCATE = SITE "L2" LEVEL 1;
+COMP "sram_io1<14>" LOCATE = SITE "P1" LEVEL 1;
+COMP "sram_io1<15>" LOCATE = SITE "R1" LEVEL 1;
+COMP "sram_io2<10>" LOCATE = SITE "G1" LEVEL 1;
+COMP "sram_io2<11>" LOCATE = SITE "F5" LEVEL 1;
+COMP "sram_io2<12>" LOCATE = SITE "C3" LEVEL 1;
+COMP "sram_io2<13>" LOCATE = SITE "K2" LEVEL 1;
+COMP "sram_io2<14>" LOCATE = SITE "M1" LEVEL 1;
+COMP "sram_io2<15>" LOCATE = SITE "N1" LEVEL 1;
+COMP "vga_red" LOCATE = SITE "R12" LEVEL 1;
+COMP "sram_addr<0>" LOCATE = SITE "L5" LEVEL 1;
+COMP "sram_addr<1>" LOCATE = SITE "N3" LEVEL 1;
+COMP "sram_addr<2>" LOCATE = SITE "M4" LEVEL 1;
+COMP "sram_addr<3>" LOCATE = SITE "M3" LEVEL 1;
+COMP "sram_addr<4>" LOCATE = SITE "L4" LEVEL 1;
+COMP "sram_addr<5>" LOCATE = SITE "G4" LEVEL 1;
+COMP "sram_addr<6>" LOCATE = SITE "F3" LEVEL 1;
+COMP "sram_addr<7>" LOCATE = SITE "F4" LEVEL 1;
+COMP "sram_addr<8>" LOCATE = SITE "E3" LEVEL 1;
+COMP "sram_addr<9>" LOCATE = SITE "E4" LEVEL 1;
+COMP "sram_oe" LOCATE = SITE "K4" LEVEL 1;
+COMP "sram_we" LOCATE = SITE "G3" LEVEL 1;
+COMP "sys_clk" LOCATE = SITE "T9" LEVEL 1;
+COMP "sys_rst" LOCATE = SITE "L14" LEVEL 1;
+PIN sys_rst_pin<0> = BEL "sys_rst" PINNAME PAD;
+PIN "sys_rst_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "digit<0>" LOCATE = SITE "D14" LEVEL 1;
+COMP "digit<1>" LOCATE = SITE "G14" LEVEL 1;
+COMP "digit<2>" LOCATE = SITE "F14" LEVEL 1;
+COMP "digit<3>" LOCATE = SITE "E13" LEVEL 1;
+COMP "vga_green" LOCATE = SITE "T12" LEVEL 1;
+COMP "vga_hsync" LOCATE = SITE "R9" LEVEL 1;
+COMP "vga_vsync" LOCATE = SITE "T10" LEVEL 1;
+COMP "ps2_data" LOCATE = SITE "M15" LEVEL 1;
+COMP "sram_io1<0>" LOCATE = SITE "N7" LEVEL 1;
+COMP "sram_io1<1>" LOCATE = SITE "T8" LEVEL 1;
+COMP "sram_io1<2>" LOCATE = SITE "R6" LEVEL 1;
+COMP "sram_io1<3>" LOCATE = SITE "T5" LEVEL 1;
+COMP "sram_io2<0>" LOCATE = SITE "P2" LEVEL 1;
+COMP "sram_io1<4>" LOCATE = SITE "R5" LEVEL 1;
+COMP "sram_io2<1>" LOCATE = SITE "N2" LEVEL 1;
+COMP "sram_io1<5>" LOCATE = SITE "C2" LEVEL 1;
+COMP "sram_io2<2>" LOCATE = SITE "M2" LEVEL 1;
+COMP "sram_io1<6>" LOCATE = SITE "C1" LEVEL 1;
+COMP "sram_io2<3>" LOCATE = SITE "K1" LEVEL 1;
+COMP "sram_io1<7>" LOCATE = SITE "B1" LEVEL 1;
+COMP "sram_io2<4>" LOCATE = SITE "J1" LEVEL 1;
+COMP "sram_io1<8>" LOCATE = SITE "D3" LEVEL 1;
+COMP "sram_io2<5>" LOCATE = SITE "G2" LEVEL 1;
+COMP "sram_io1<9>" LOCATE = SITE "P8" LEVEL 1;
+COMP "sram_io2<6>" LOCATE = SITE "E1" LEVEL 1;
+COMP "sram_io2<7>" LOCATE = SITE "D1" LEVEL 1;
+COMP "sram_io2<8>" LOCATE = SITE "D2" LEVEL 1;
+COMP "sram_io2<9>" LOCATE = SITE "E2" LEVEL 1;
+COMP "vga_blue" LOCATE = SITE "R11" LEVEL 1;
+COMP "sram_addr<10>" LOCATE = SITE "G5" LEVEL 1;
+COMP "sram_addr<11>" LOCATE = SITE "H3" LEVEL 1;
+COMP "sram_addr<12>" LOCATE = SITE "H4" LEVEL 1;
+COMP "sram_addr<13>" LOCATE = SITE "J4" LEVEL 1;
+COMP "sram_addr<14>" LOCATE = SITE "J3" LEVEL 1;
+COMP "sram_addr<15>" LOCATE = SITE "K3" LEVEL 1;
+COMP "sram_addr<16>" LOCATE = SITE "K5" LEVEL 1;
+COMP "sram_addr<17>" LOCATE = SITE "L3" LEVEL 1;
+COMP "sram_ce1" LOCATE = SITE "P7" LEVEL 1;
+COMP "sram_ce2" LOCATE = SITE "N5" LEVEL 1;
+COMP "sram_lb1" LOCATE = SITE "P6" LEVEL 1;
+COMP "sram_lb2" LOCATE = SITE "P5" LEVEL 1;
+COMP "sram_ub1" LOCATE = SITE "T4" LEVEL 1;
+COMP "sram_ub2" LOCATE = SITE "R4" LEVEL 1;
+COMP "swts_i<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "swts_i<1>" LOCATE = SITE "G12" LEVEL 1;
+COMP "swts_i<2>" LOCATE = SITE "H14" LEVEL 1;
+COMP "swts_i<3>" LOCATE = SITE "H13" LEVEL 1;
+COMP "swts_i<4>" LOCATE = SITE "J14" LEVEL 1;
+COMP "swts_i<5>" LOCATE = SITE "J13" LEVEL 1;
+COMP "swts_i<6>" LOCATE = SITE "K14" LEVEL 1;
+COMP "swts_i<7>" LOCATE = SITE "K13" LEVEL 1;
+NET "sys_clk_BUFGP/IBUFG" BEL "sys_clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+PIN wbvga/gen1.gen2.bram.A_pins<15> = BEL "wbvga/gen1.gen2.bram.A" PINNAME
+        CLKA;
+PIN wbvga/gen1.gen2.bram.B_pins<15> = BEL "wbvga/gen1.gen2.bram.B" PINNAME
+        CLKB;
+TIMEGRP sys_clk = BEL "wsrm/waits_30" BEL "wsrm/waits_29" BEL "wsrm/waits_28"
+        BEL "wsrm/waits_27" BEL "wsrm/waits_26" BEL "wsrm/waits_25" BEL
+        "wsrm/waits_24" BEL "wsrm/waits_23" BEL "wsrm/waits_22" BEL
+        "wsrm/waits_21" BEL "wsrm/waits_20" BEL "wsrm/waits_19" BEL
+        "wsrm/waits_18" BEL "wsrm/waits_17" BEL "wsrm/waits_16" BEL
+        "wsrm/waits_15" BEL "wsrm/waits_14" BEL "wsrm/waits_13" BEL
+        "wsrm/waits_12" BEL "wsrm/waits_11" BEL "wsrm/waits_10" BEL
+        "wsrm/waits_9" BEL "wsrm/waits_8" BEL "wsrm/waits_7" BEL
+        "wsrm/waits_6" BEL "wsrm/waits_5" BEL "wsrm/waits_4" BEL
+        "wsrm/waits_3" BEL "wsrm/waits_2" BEL "wsrm/waits_1" BEL
+        "wsrm/waits_0" BEL "wbgm/state_FSM_FFd4" BEL "wbgm/state_FSM_FFd5" BEL
+        "wbgm/state_FSM_FFd6" BEL "wbgm/state_FSM_FFd19" BEL
+        "wbgm/state_FSM_FFd14" BEL "wbgm/state_FSM_FFd7" BEL
+        "wbgm/state_FSM_FFd26" BEL "wbgm/state_FSM_FFd25" BEL
+        "wbgm/state_FSM_FFd27" BEL "wbgm/state_FSM_FFd23" BEL
+        "wbgm/state_FSM_FFd22" BEL "wbgm/state_FSM_FFd24" BEL
+        "wbgm/state_FSM_FFd20" BEL "wbgm/state_FSM_FFd21" BEL
+        "wbgm/state_FSM_FFd18" BEL "wbgm/state_FSM_FFd17" BEL
+        "wbgm/state_FSM_FFd16" BEL "wbgm/state_FSM_FFd15" BEL
+        "wbgm/state_FSM_FFd13" BEL "wbgm/state_FSM_FFd12" BEL
+        "wbgm/state_FSM_FFd11" BEL "wbgm/state_FSM_FFd10" BEL
+        "wbgm/state_FSM_FFd9" BEL "wbgm/state_FSM_FFd8" BEL
+        "wbgm/state_FSM_FFd3" BEL "wbgm/state_FSM_FFd2" BEL
+        "wbgm/state_FSM_FFd1" BEL "wbgm/cnt_31" BEL "wbgm/cnt_30" BEL
+        "wbgm/cnt_29" BEL "wbgm/cnt_28" BEL "wbgm/cnt_27" BEL "wbgm/cnt_26"
+        BEL "wbgm/cnt_25" BEL "wbgm/cnt_24" BEL "wbgm/cnt_23" BEL
+        "wbgm/cnt_22" BEL "wbgm/cnt_21" BEL "wbgm/cnt_20" BEL "wbgm/cnt_19"
+        BEL "wbgm/cnt_18" BEL "wbgm/cnt_17" BEL "wbgm/cnt_16" BEL
+        "wbgm/cnt_15" BEL "wbgm/cnt_14" BEL "wbgm/cnt_13" BEL "wbgm/cnt_12"
+        BEL "wbgm/cnt_11" BEL "wbgm/cnt_10" BEL "wbgm/cnt_9" BEL "wbgm/cnt_8"
+        BEL "wbgm/cnt_7" BEL "wbgm/cnt_6" BEL "wbgm/cnt_5" BEL "wbgm/cnt_4"
+        BEL "wbgm/cnt_3" BEL "wbgm/cnt_2" BEL "wbgm/cnt_1" BEL "wbgm/cnt_0"
+        BEL "wbgm/readaddr_17" BEL "wbgm/readaddr_16" BEL "wbgm/readaddr_15"
+        BEL "wbgm/readaddr_14" BEL "wbgm/readaddr_13" BEL "wbgm/readaddr_12"
+        BEL "wbgm/readaddr_11" BEL "wbgm/readaddr_10" BEL "wbgm/readaddr_9"
+        BEL "wbgm/readaddr_8" BEL "wbgm/readaddr_7" BEL "wbgm/readaddr_6" BEL
+        "wbgm/readaddr_5" BEL "wbgm/readaddr_4" BEL "wbgm/readaddr_3" BEL
+        "wbgm/readaddr_2" BEL "wbgm/readaddr_1" BEL "wbgm/readaddr_0" BEL
+        "wbgm/neighborsG_79_3" BEL "wbgm/neighborsG_79_2" BEL
+        "wbgm/neighborsG_79_1" BEL "wbgm/neighborsG_79_0" BEL
+        "wbgm/neighborsG_78_3" BEL "wbgm/neighborsG_78_2" BEL
+        "wbgm/neighborsG_78_1" BEL "wbgm/neighborsG_78_0" BEL
+        "wbgm/neighborsG_77_3" BEL "wbgm/neighborsG_77_2" BEL
+        "wbgm/neighborsG_77_1" BEL "wbgm/neighborsG_77_0" BEL
+        "wbgm/neighborsG_76_3" BEL "wbgm/neighborsG_76_2" BEL
+        "wbgm/neighborsG_76_1" BEL "wbgm/neighborsG_76_0" BEL
+        "wbgm/neighborsG_75_3" BEL "wbgm/neighborsG_75_2" BEL
+        "wbgm/neighborsG_75_1" BEL "wbgm/neighborsG_75_0" BEL
+        "wbgm/neighborsG_80_3" BEL "wbgm/neighborsG_80_2" BEL
+        "wbgm/neighborsG_80_1" BEL "wbgm/neighborsG_80_0" BEL
+        "wbgm/neighborsG_74_3" BEL "wbgm/neighborsG_74_2" BEL
+        "wbgm/neighborsG_74_1" BEL "wbgm/neighborsG_74_0" BEL
+        "wbgm/neighborsG_68_3" BEL "wbgm/neighborsG_68_2" BEL
+        "wbgm/neighborsG_68_1" BEL "wbgm/neighborsG_68_0" BEL
+        "wbgm/neighborsG_69_3" BEL "wbgm/neighborsG_69_2" BEL
+        "wbgm/neighborsG_69_1" BEL "wbgm/neighborsG_69_0" BEL
+        "wbgm/neighborsG_73_3" BEL "wbgm/neighborsG_73_2" BEL
+        "wbgm/neighborsG_73_1" BEL "wbgm/neighborsG_73_0" BEL
+        "wbgm/neighborsG_67_3" BEL "wbgm/neighborsG_67_2" BEL
+        "wbgm/neighborsG_67_1" BEL "wbgm/neighborsG_67_0" BEL
+        "wbgm/neighborsG_72_3" BEL "wbgm/neighborsG_72_2" BEL
+        "wbgm/neighborsG_72_1" BEL "wbgm/neighborsG_72_0" BEL
+        "wbgm/neighborsB_79_3" BEL "wbgm/neighborsB_79_2" BEL
+        "wbgm/neighborsB_79_1" BEL "wbgm/neighborsG_66_3" BEL
+        "wbgm/neighborsG_66_2" BEL "wbgm/neighborsG_66_1" BEL
+        "wbgm/neighborsG_66_0" BEL "wbgm/neighborsG_71_3" BEL
+        "wbgm/neighborsG_71_2" BEL "wbgm/neighborsG_71_1" BEL
+        "wbgm/neighborsG_71_0" BEL "wbgm/neighborsG_65_3" BEL
+        "wbgm/neighborsG_65_2" BEL "wbgm/neighborsG_65_1" BEL
+        "wbgm/neighborsG_65_0" BEL "wbgm/neighborsG_70_3" BEL
+        "wbgm/neighborsG_70_2" BEL "wbgm/neighborsG_70_1" BEL
+        "wbgm/neighborsG_70_0" BEL "wbgm/neighborsB_78_3" BEL
+        "wbgm/neighborsB_78_2" BEL "wbgm/neighborsB_78_1" BEL
+        "wbgm/neighborsB_77_3" BEL "wbgm/neighborsB_77_2" BEL
+        "wbgm/neighborsB_77_1" BEL "wbgm/neighborsG_59_3" BEL
+        "wbgm/neighborsG_59_2" BEL "wbgm/neighborsG_59_1" BEL
+        "wbgm/neighborsG_59_0" BEL "wbgm/neighborsG_64_3" BEL
+        "wbgm/neighborsG_64_2" BEL "wbgm/neighborsG_64_1" BEL
+        "wbgm/neighborsG_64_0" BEL "wbgm/neighborsB_76_3" BEL
+        "wbgm/neighborsB_76_2" BEL "wbgm/neighborsB_76_1" BEL
+        "wbgm/neighborsG_58_3" BEL "wbgm/neighborsG_58_2" BEL
+        "wbgm/neighborsG_58_1" BEL "wbgm/neighborsG_58_0" BEL
+        "wbgm/neighborsG_63_3" BEL "wbgm/neighborsG_63_2" BEL
+        "wbgm/neighborsG_63_1" BEL "wbgm/neighborsG_63_0" BEL
+        "wbgm/neighborsB_80_3" BEL "wbgm/neighborsB_80_2" BEL
+        "wbgm/neighborsB_80_1" BEL "wbgm/neighborsG_57_3" BEL
+        "wbgm/neighborsG_57_2" BEL "wbgm/neighborsG_57_1" BEL
+        "wbgm/neighborsG_57_0" BEL "wbgm/neighborsB_75_3" BEL
+        "wbgm/neighborsB_75_2" BEL "wbgm/neighborsB_75_1" BEL
+        "wbgm/neighborsG_62_3" BEL "wbgm/neighborsG_62_2" BEL
+        "wbgm/neighborsG_62_1" BEL "wbgm/neighborsG_62_0" BEL
+        "wbgm/neighborsB_69_3" BEL "wbgm/neighborsB_69_2" BEL
+        "wbgm/neighborsB_69_1" BEL "wbgm/neighborsB_74_3" BEL
+        "wbgm/neighborsB_74_2" BEL "wbgm/neighborsB_74_1" BEL
+        "wbgm/neighborsG_56_3" BEL "wbgm/neighborsG_56_2" BEL
+        "wbgm/neighborsG_56_1" BEL "wbgm/neighborsG_56_0" BEL
+        "wbgm/neighborsG_61_3" BEL "wbgm/neighborsG_61_2" BEL
+        "wbgm/neighborsG_61_1" BEL "wbgm/neighborsG_61_0" BEL
+        "wbgm/neighborsB_68_3" BEL "wbgm/neighborsB_68_2" BEL
+        "wbgm/neighborsB_68_1" BEL "wbgm/neighborsG_55_3" BEL
+        "wbgm/neighborsG_55_2" BEL "wbgm/neighborsG_55_1" BEL
+        "wbgm/neighborsG_55_0" BEL "wbgm/neighborsG_60_3" BEL
+        "wbgm/neighborsG_60_2" BEL "wbgm/neighborsG_60_1" BEL
+        "wbgm/neighborsG_60_0" BEL "wbgm/neighborsB_73_3" BEL
+        "wbgm/neighborsB_73_2" BEL "wbgm/neighborsB_73_1" BEL
+        "wbgm/neighborsB_67_3" BEL "wbgm/neighborsB_67_2" BEL
+        "wbgm/neighborsB_67_1" BEL "wbgm/neighborsB_72_3" BEL
+        "wbgm/neighborsB_72_2" BEL "wbgm/neighborsB_72_1" BEL
+        "wbgm/neighborsG_49_3" BEL "wbgm/neighborsG_49_2" BEL
+        "wbgm/neighborsG_49_1" BEL "wbgm/neighborsG_49_0" BEL
+        "wbgm/neighborsG_54_3" BEL "wbgm/neighborsG_54_2" BEL
+        "wbgm/neighborsG_54_1" BEL "wbgm/neighborsG_54_0" BEL
+        "wbgm/neighborsB_66_3" BEL "wbgm/neighborsB_66_2" BEL
+        "wbgm/neighborsB_66_1" BEL "wbgm/neighborsB_71_3" BEL
+        "wbgm/neighborsB_71_2" BEL "wbgm/neighborsB_71_1" BEL
+        "wbgm/neighborsG_53_3" BEL "wbgm/neighborsG_53_2" BEL
+        "wbgm/neighborsG_53_1" BEL "wbgm/neighborsG_53_0" BEL
+        "wbgm/neighborsB_70_3" BEL "wbgm/neighborsB_70_2" BEL
+        "wbgm/neighborsB_70_1" BEL "wbgm/neighborsG_48_3" BEL
+        "wbgm/neighborsG_48_2" BEL "wbgm/neighborsG_48_1" BEL
+        "wbgm/neighborsG_48_0" BEL "wbgm/neighborsB_65_3" BEL
+        "wbgm/neighborsB_65_2" BEL "wbgm/neighborsB_65_1" BEL
+        "wbgm/neighborsG_47_3" BEL "wbgm/neighborsG_47_2" BEL
+        "wbgm/neighborsG_47_1" BEL "wbgm/neighborsG_47_0" BEL
+        "wbgm/neighborsB_59_3" BEL "wbgm/neighborsB_59_2" BEL
+        "wbgm/neighborsB_59_1" BEL "wbgm/neighborsB_64_3" BEL
+        "wbgm/neighborsB_64_2" BEL "wbgm/neighborsB_64_1" BEL
+        "wbgm/neighborsG_52_3" BEL "wbgm/neighborsG_52_2" BEL
+        "wbgm/neighborsG_52_1" BEL "wbgm/neighborsG_52_0" BEL
+        "wbgm/neighborsG_46_3" BEL "wbgm/neighborsG_46_2" BEL
+        "wbgm/neighborsG_46_1" BEL "wbgm/neighborsG_46_0" BEL
+        "wbgm/neighborsG_51_3" BEL "wbgm/neighborsG_51_2" BEL
+        "wbgm/neighborsG_51_1" BEL "wbgm/neighborsG_51_0" BEL
+        "wbgm/neighborsB_63_3" BEL "wbgm/neighborsB_63_2" BEL
+        "wbgm/neighborsB_63_1" BEL "wbgm/neighborsG_45_3" BEL
+        "wbgm/neighborsG_45_2" BEL "wbgm/neighborsG_45_1" BEL
+        "wbgm/neighborsG_45_0" BEL "wbgm/neighborsB_58_3" BEL
+        "wbgm/neighborsB_58_2" BEL "wbgm/neighborsB_58_1" BEL
+        "wbgm/neighborsG_50_3" BEL "wbgm/neighborsG_50_2" BEL
+        "wbgm/neighborsG_50_1" BEL "wbgm/neighborsG_50_0" BEL
+        "wbgm/neighborsB_57_3" BEL "wbgm/neighborsB_57_2" BEL
+        "wbgm/neighborsB_57_1" BEL "wbgm/neighborsB_62_3" BEL
+        "wbgm/neighborsB_62_2" BEL "wbgm/neighborsB_62_1" BEL
+        "wbgm/neighborsG_39_3" BEL "wbgm/neighborsG_39_2" BEL
+        "wbgm/neighborsG_39_1" BEL "wbgm/neighborsG_39_0" BEL
+        "wbgm/neighborsG_44_3" BEL "wbgm/neighborsG_44_2" BEL
+        "wbgm/neighborsG_44_1" BEL "wbgm/neighborsG_44_0" BEL
+        "wbgm/neighborsB_56_3" BEL "wbgm/neighborsB_56_2" BEL
+        "wbgm/neighborsB_56_1" BEL "wbgm/neighborsG_38_3" BEL
+        "wbgm/neighborsG_38_2" BEL "wbgm/neighborsG_38_1" BEL
+        "wbgm/neighborsG_38_0" BEL "wbgm/neighborsG_43_3" BEL
+        "wbgm/neighborsG_43_2" BEL "wbgm/neighborsG_43_1" BEL
+        "wbgm/neighborsG_43_0" BEL "wbgm/neighborsB_61_3" BEL
+        "wbgm/neighborsB_61_2" BEL "wbgm/neighborsB_61_1" BEL
+        "wbgm/neighborsB_55_3" BEL "wbgm/neighborsB_55_2" BEL
+        "wbgm/neighborsB_55_1" BEL "wbgm/neighborsB_60_3" BEL
+        "wbgm/neighborsB_60_2" BEL "wbgm/neighborsB_60_1" BEL
+        "wbgm/neighborsG_37_3" BEL "wbgm/neighborsG_37_2" BEL
+        "wbgm/neighborsG_37_1" BEL "wbgm/neighborsG_37_0" BEL
+        "wbgm/neighborsG_42_3" BEL "wbgm/neighborsG_42_2" BEL
+        "wbgm/neighborsG_42_1" BEL "wbgm/neighborsG_42_0" BEL
+        "wbgm/neighborsB_49_3" BEL "wbgm/neighborsB_49_2" BEL
+        "wbgm/neighborsB_49_1" BEL "wbgm/neighborsB_54_3" BEL
+        "wbgm/neighborsB_54_2" BEL "wbgm/neighborsB_54_1" BEL
+        "wbgm/neighborsG_41_3" BEL "wbgm/neighborsG_41_2" BEL
+        "wbgm/neighborsG_41_1" BEL "wbgm/neighborsG_41_0" BEL
+        "wbgm/neighborsB_48_3" BEL "wbgm/neighborsB_48_2" BEL
+        "wbgm/neighborsB_48_1" BEL "wbgm/neighborsG_36_3" BEL
+        "wbgm/neighborsG_36_2" BEL "wbgm/neighborsG_36_1" BEL
+        "wbgm/neighborsG_36_0" BEL "wbgm/neighborsB_53_3" BEL
+        "wbgm/neighborsB_53_2" BEL "wbgm/neighborsB_53_1" BEL
+        "wbgm/neighborsG_35_3" BEL "wbgm/neighborsG_35_2" BEL
+        "wbgm/neighborsG_35_1" BEL "wbgm/neighborsG_35_0" BEL
+        "wbgm/neighborsG_40_3" BEL "wbgm/neighborsG_40_2" BEL
+        "wbgm/neighborsG_40_1" BEL "wbgm/neighborsG_40_0" BEL
+        "wbgm/neighborsB_47_3" BEL "wbgm/neighborsB_47_2" BEL
+        "wbgm/neighborsB_47_1" BEL "wbgm/neighborsB_52_3" BEL
+        "wbgm/neighborsB_52_2" BEL "wbgm/neighborsB_52_1" BEL
+        "wbgm/neighborsG_29_3" BEL "wbgm/neighborsG_29_2" BEL
+        "wbgm/neighborsG_29_1" BEL "wbgm/neighborsG_29_0" BEL
+        "wbgm/neighborsB_46_3" BEL "wbgm/neighborsB_46_2" BEL
+        "wbgm/neighborsB_46_1" BEL "wbgm/neighborsB_51_3" BEL
+        "wbgm/neighborsB_51_2" BEL "wbgm/neighborsB_51_1" BEL
+        "wbgm/neighborsG_34_3" BEL "wbgm/neighborsG_34_2" BEL
+        "wbgm/neighborsG_34_1" BEL "wbgm/neighborsG_34_0" BEL
+        "wbgm/neighborsG_28_3" BEL "wbgm/neighborsG_28_2" BEL
+        "wbgm/neighborsG_28_1" BEL "wbgm/neighborsG_28_0" BEL
+        "wbgm/neighborsG_33_3" BEL "wbgm/neighborsG_33_2" BEL
+        "wbgm/neighborsG_33_1" BEL "wbgm/neighborsG_33_0" BEL
+        "wbgm/neighborsB_45_3" BEL "wbgm/neighborsB_45_2" BEL
+        "wbgm/neighborsB_45_1" BEL "wbgm/neighborsB_50_3" BEL
+        "wbgm/neighborsB_50_2" BEL "wbgm/neighborsB_50_1" BEL
+        "wbgm/neighborsG_27_3" BEL "wbgm/neighborsG_27_2" BEL
+        "wbgm/neighborsG_27_1" BEL "wbgm/neighborsG_27_0" BEL
+        "wbgm/neighborsG_32_3" BEL "wbgm/neighborsG_32_2" BEL
+        "wbgm/neighborsG_32_1" BEL "wbgm/neighborsG_32_0" BEL
+        "wbgm/neighborsB_44_3" BEL "wbgm/neighborsB_44_2" BEL
+        "wbgm/neighborsB_44_1" BEL "wbgm/neighborsG_26_3" BEL
+        "wbgm/neighborsG_26_2" BEL "wbgm/neighborsG_26_1" BEL
+        "wbgm/neighborsG_26_0" BEL "wbgm/neighborsB_39_3" BEL
+        "wbgm/neighborsB_39_2" BEL "wbgm/neighborsB_39_1" BEL
+        "wbgm/neighborsG_31_3" BEL "wbgm/neighborsG_31_2" BEL
+        "wbgm/neighborsG_31_1" BEL "wbgm/neighborsG_31_0" BEL
+        "wbgm/neighborsB_38_3" BEL "wbgm/neighborsB_38_2" BEL
+        "wbgm/neighborsB_38_1" BEL "wbgm/neighborsB_43_3" BEL
+        "wbgm/neighborsB_43_2" BEL "wbgm/neighborsB_43_1" BEL
+        "wbgm/neighborsG_25_3" BEL "wbgm/neighborsG_25_2" BEL
+        "wbgm/neighborsG_25_1" BEL "wbgm/neighborsG_25_0" BEL
+        "wbgm/neighborsG_30_3" BEL "wbgm/neighborsG_30_2" BEL
+        "wbgm/neighborsG_30_1" BEL "wbgm/neighborsG_30_0" BEL
+        "wbgm/neighborsB_37_3" BEL "wbgm/neighborsB_37_2" BEL
+        "wbgm/neighborsB_37_1" BEL "wbgm/neighborsG_19_3" BEL
+        "wbgm/neighborsG_19_2" BEL "wbgm/neighborsG_19_1" BEL
+        "wbgm/neighborsG_19_0" BEL "wbgm/neighborsG_24_3" BEL
+        "wbgm/neighborsG_24_2" BEL "wbgm/neighborsG_24_1" BEL
+        "wbgm/neighborsG_24_0" BEL "wbgm/neighborsB_42_3" BEL
+        "wbgm/neighborsB_42_2" BEL "wbgm/neighborsB_42_1" BEL
+        "wbgm/neighborsB_36_3" BEL "wbgm/neighborsB_36_2" BEL
+        "wbgm/neighborsB_36_1" BEL "wbgm/neighborsB_41_3" BEL
+        "wbgm/neighborsB_41_2" BEL "wbgm/neighborsB_41_1" BEL
+        "wbgm/neighborsG_18_3" BEL "wbgm/neighborsG_18_2" BEL
+        "wbgm/neighborsG_18_1" BEL "wbgm/neighborsG_18_0" BEL
+        "wbgm/neighborsG_23_3" BEL "wbgm/neighborsG_23_2" BEL
+        "wbgm/neighborsG_23_1" BEL "wbgm/neighborsG_23_0" BEL
+        "wbgm/neighborsB_35_3" BEL "wbgm/neighborsB_35_2" BEL
+        "wbgm/neighborsB_35_1" BEL "wbgm/neighborsB_40_3" BEL
+        "wbgm/neighborsB_40_2" BEL "wbgm/neighborsB_40_1" BEL
+        "wbgm/neighborsG_17_3" BEL "wbgm/neighborsG_17_2" BEL
+        "wbgm/neighborsG_17_1" BEL "wbgm/neighborsG_17_0" BEL
+        "wbgm/neighborsB_29_3" BEL "wbgm/neighborsB_29_2" BEL
+        "wbgm/neighborsB_29_1" BEL "wbgm/neighborsG_22_3" BEL
+        "wbgm/neighborsG_22_2" BEL "wbgm/neighborsG_22_1" BEL
+        "wbgm/neighborsG_22_0" BEL "wbgm/neighborsB_34_3" BEL
+        "wbgm/neighborsB_34_2" BEL "wbgm/neighborsB_34_1" BEL
+        "wbgm/neighborsG_16_3" BEL "wbgm/neighborsG_16_2" BEL
+        "wbgm/neighborsG_16_1" BEL "wbgm/neighborsG_16_0" BEL
+        "wbgm/neighborsG_21_3" BEL "wbgm/neighborsG_21_2" BEL
+        "wbgm/neighborsG_21_1" BEL "wbgm/neighborsG_21_0" BEL
+        "wbgm/neighborsB_28_3" BEL "wbgm/neighborsB_28_2" BEL
+        "wbgm/neighborsB_28_1" BEL "wbgm/neighborsB_33_3" BEL
+        "wbgm/neighborsB_33_2" BEL "wbgm/neighborsB_33_1" BEL
+        "wbgm/neighborsG_15_3" BEL "wbgm/neighborsG_15_2" BEL
+        "wbgm/neighborsG_15_1" BEL "wbgm/neighborsG_15_0" BEL
+        "wbgm/neighborsB_27_3" BEL "wbgm/neighborsB_27_2" BEL
+        "wbgm/neighborsB_27_1" BEL "wbgm/neighborsB_32_3" BEL
+        "wbgm/neighborsB_32_2" BEL "wbgm/neighborsB_32_1" BEL
+        "wbgm/neighborsG_20_3" BEL "wbgm/neighborsG_20_2" BEL
+        "wbgm/neighborsG_20_1" BEL "wbgm/neighborsG_20_0" BEL
+        "wbgm/neighborsG_14_3" BEL "wbgm/neighborsG_14_2" BEL
+        "wbgm/neighborsG_14_1" BEL "wbgm/neighborsG_14_0" BEL
+        "wbgm/neighborsB_26_3" BEL "wbgm/neighborsB_26_2" BEL
+        "wbgm/neighborsB_26_1" BEL "wbgm/neighborsG_13_3" BEL
+        "wbgm/neighborsG_13_2" BEL "wbgm/neighborsG_13_1" BEL
+        "wbgm/neighborsG_13_0" BEL "wbgm/neighborsB_30_3" BEL
+        "wbgm/neighborsB_30_2" BEL "wbgm/neighborsB_30_1" BEL
+        "wbgm/neighborsB_31_3" BEL "wbgm/neighborsB_31_2" BEL
+        "wbgm/neighborsB_31_1" BEL "wbgm/neighborsB_25_3" BEL
+        "wbgm/neighborsB_25_2" BEL "wbgm/neighborsB_25_1" BEL
+        "wbgm/neighborsG_12_3" BEL "wbgm/neighborsG_12_2" BEL
+        "wbgm/neighborsG_12_1" BEL "wbgm/neighborsG_12_0" BEL
+        "wbgm/neighborsB_19_3" BEL "wbgm/neighborsB_19_2" BEL
+        "wbgm/neighborsB_19_1" BEL "wbgm/neighborsG_11_3" BEL
+        "wbgm/neighborsG_11_2" BEL "wbgm/neighborsG_11_1" BEL
+        "wbgm/neighborsG_11_0" BEL "wbgm/neighborsB_24_3" BEL
+        "wbgm/neighborsB_24_2" BEL "wbgm/neighborsB_24_1" BEL
+        "wbgm/neighborsB_23_3" BEL "wbgm/neighborsB_23_2" BEL
+        "wbgm/neighborsB_23_1" BEL "wbgm/neighborsB_18_3" BEL
+        "wbgm/neighborsB_18_2" BEL "wbgm/neighborsB_18_1" BEL
+        "wbgm/neighborsG_10_3" BEL "wbgm/neighborsG_10_2" BEL
+        "wbgm/neighborsG_10_1" BEL "wbgm/neighborsG_10_0" BEL
+        "wbgm/neighborsB_22_3" BEL "wbgm/neighborsB_22_2" BEL
+        "wbgm/neighborsB_22_1" BEL "wbgm/neighborsB_17_3" BEL
+        "wbgm/neighborsB_17_2" BEL "wbgm/neighborsB_17_1" BEL
+        "wbgm/neighborsB_21_3" BEL "wbgm/neighborsB_21_2" BEL
+        "wbgm/neighborsB_21_1" BEL "wbgm/neighborsB_20_3" BEL
+        "wbgm/neighborsB_20_2" BEL "wbgm/neighborsB_20_1" BEL
+        "wbgm/neighborsB_15_3" BEL "wbgm/neighborsB_15_2" BEL
+        "wbgm/neighborsB_15_1" BEL "wbgm/neighborsB_16_3" BEL
+        "wbgm/neighborsB_16_2" BEL "wbgm/neighborsB_16_1" BEL
+        "wbgm/neighborsB_14_3" BEL "wbgm/neighborsB_14_2" BEL
+        "wbgm/neighborsB_14_1" BEL "wbgm/neighborsB_13_3" BEL
+        "wbgm/neighborsB_13_2" BEL "wbgm/neighborsB_13_1" BEL
+        "wbgm/neighborsB_12_3" BEL "wbgm/neighborsB_12_2" BEL
+        "wbgm/neighborsB_12_1" BEL "wbgm/neighborsB_11_3" BEL
+        "wbgm/neighborsB_11_2" BEL "wbgm/neighborsB_11_1" BEL
+        "wbgm/neighborsB_10_3" BEL "wbgm/neighborsB_10_2" BEL
+        "wbgm/neighborsB_10_1" BEL "wbgm/neighborsG_9_3" BEL
+        "wbgm/neighborsG_9_2" BEL "wbgm/neighborsG_9_1" BEL
+        "wbgm/neighborsG_9_0" BEL "wbgm/neighborsG_8_3" BEL
+        "wbgm/neighborsG_8_2" BEL "wbgm/neighborsG_8_1" BEL
+        "wbgm/neighborsG_8_0" BEL "wbgm/neighborsG_7_3" BEL
+        "wbgm/neighborsG_7_2" BEL "wbgm/neighborsG_7_1" BEL
+        "wbgm/neighborsG_7_0" BEL "wbgm/neighborsG_6_3" BEL
+        "wbgm/neighborsG_6_2" BEL "wbgm/neighborsG_6_1" BEL
+        "wbgm/neighborsG_6_0" BEL "wbgm/neighborsG_5_3" BEL
+        "wbgm/neighborsG_5_2" BEL "wbgm/neighborsG_5_1" BEL
+        "wbgm/neighborsG_5_0" BEL "wbgm/neighborsG_4_3" BEL
+        "wbgm/neighborsG_4_2" BEL "wbgm/neighborsG_4_1" BEL
+        "wbgm/neighborsG_4_0" BEL "wbgm/neighborsG_3_3" BEL
+        "wbgm/neighborsG_3_2" BEL "wbgm/neighborsG_3_1" BEL
+        "wbgm/neighborsG_3_0" BEL "wbgm/neighborsG_1_3" BEL
+        "wbgm/neighborsG_1_2" BEL "wbgm/neighborsG_1_1" BEL
+        "wbgm/neighborsG_1_0" BEL "wbgm/neighborsG_2_3" BEL
+        "wbgm/neighborsG_2_2" BEL "wbgm/neighborsG_2_1" BEL
+        "wbgm/neighborsG_2_0" BEL "wbgm/neighborsB_9_3" BEL
+        "wbgm/neighborsB_9_2" BEL "wbgm/neighborsB_9_1" BEL
+        "wbgm/neighborsB_8_3" BEL "wbgm/neighborsB_8_2" BEL
+        "wbgm/neighborsB_8_1" BEL "wbgm/neighborsB_7_3" BEL
+        "wbgm/neighborsB_7_2" BEL "wbgm/neighborsB_7_1" BEL
+        "wbgm/neighborsB_6_3" BEL "wbgm/neighborsB_6_2" BEL
+        "wbgm/neighborsB_6_1" BEL "wbgm/neighborsB_5_3" BEL
+        "wbgm/neighborsB_5_2" BEL "wbgm/neighborsB_5_1" BEL
+        "wbgm/neighborsB_4_3" BEL "wbgm/neighborsB_4_2" BEL
+        "wbgm/neighborsB_4_1" BEL "wbgm/neighborsB_3_3" BEL
+        "wbgm/neighborsB_3_2" BEL "wbgm/neighborsB_3_1" BEL
+        "wbgm/neighborsB_2_3" BEL "wbgm/neighborsB_2_2" BEL
+        "wbgm/neighborsB_2_1" BEL "wbgm/neighborsB_1_3" BEL
+        "wbgm/neighborsB_1_2" BEL "wbgm/neighborsB_1_1" BEL "wbgm/genClk" BEL
+        "wbgm/addr_17" BEL "wbgm/addr_16" BEL "wbgm/addr_15" BEL
+        "wbgm/addr_14" BEL "wbgm/addr_13" BEL "wbgm/addr_12" BEL
+        "wbgm/addr_11" BEL "wbgm/addr_10" BEL "wbgm/addr_9" BEL "wbgm/addr_8"
+        BEL "wbgm/addr_7" BEL "wbgm/addr_6" BEL "wbgm/addr_5" BEL
+        "wbgm/addr_4" BEL "wbgm/addr_3" BEL "wbgm/addr_2" BEL "wbgm/addr_1"
+        BEL "wbgm/addr_0" BEL "wbgm/dRow_31" BEL "wbgm/dRow_30" BEL
+        "wbgm/dRow_29" BEL "wbgm/dRow_28" BEL "wbgm/dRow_27" BEL
+        "wbgm/dRow_26" BEL "wbgm/dRow_25" BEL "wbgm/dRow_24" BEL
+        "wbgm/dRow_23" BEL "wbgm/dRow_22" BEL "wbgm/dRow_21" BEL
+        "wbgm/dRow_20" BEL "wbgm/dRow_19" BEL "wbgm/dRow_18" BEL
+        "wbgm/dRow_17" BEL "wbgm/dRow_16" BEL "wbgm/dRow_15" BEL
+        "wbgm/dRow_14" BEL "wbgm/dRow_13" BEL "wbgm/dRow_12" BEL
+        "wbgm/dRow_11" BEL "wbgm/dRow_10" BEL "wbgm/dRow_9" BEL "wbgm/dRow_8"
+        BEL "wbgm/dRow_7" BEL "wbgm/dRow_6" BEL "wbgm/dRow_5" BEL
+        "wbgm/dRow_4" BEL "wbgm/dRow_3" BEL "wbgm/dRow_2" BEL "wbgm/dRow_1"
+        BEL "wbgm/dRow_0" BEL "wbgm/cache2_81" BEL "wbgm/cache2_80" BEL
+        "wbgm/cache2_79" BEL "wbgm/cache2_78" BEL "wbgm/cache2_77" BEL
+        "wbgm/cache2_76" BEL "wbgm/cache2_75" BEL "wbgm/cache2_74" BEL
+        "wbgm/cache2_73" BEL "wbgm/cache2_72" BEL "wbgm/cache2_71" BEL
+        "wbgm/cache2_70" BEL "wbgm/cache2_69" BEL "wbgm/cache2_68" BEL
+        "wbgm/cache2_67" BEL "wbgm/cache2_66" BEL "wbgm/cache2_65" BEL
+        "wbgm/cache2_64" BEL "wbgm/cache2_63" BEL "wbgm/cache2_62" BEL
+        "wbgm/cache2_61" BEL "wbgm/cache2_60" BEL "wbgm/cache2_59" BEL
+        "wbgm/cache2_58" BEL "wbgm/cache2_57" BEL "wbgm/cache2_56" BEL
+        "wbgm/cache2_55" BEL "wbgm/cache2_54" BEL "wbgm/cache2_53" BEL
+        "wbgm/cache2_52" BEL "wbgm/cache2_51" BEL "wbgm/cache2_50" BEL
+        "wbgm/cache2_49" BEL "wbgm/cache2_48" BEL "wbgm/cache2_47" BEL
+        "wbgm/cache2_46" BEL "wbgm/cache2_45" BEL "wbgm/cache2_44" BEL
+        "wbgm/cache2_43" BEL "wbgm/cache2_42" BEL "wbgm/cache2_41" BEL
+        "wbgm/cache2_40" BEL "wbgm/cache2_39" BEL "wbgm/cache2_38" BEL
+        "wbgm/cache2_37" BEL "wbgm/cache2_36" BEL "wbgm/cache2_35" BEL
+        "wbgm/cache2_34" BEL "wbgm/cache2_33" BEL "wbgm/cache2_32" BEL
+        "wbgm/cache2_31" BEL "wbgm/cache2_30" BEL "wbgm/cache2_29" BEL
+        "wbgm/cache2_28" BEL "wbgm/cache2_27" BEL "wbgm/cache2_26" BEL
+        "wbgm/cache2_25" BEL "wbgm/cache2_24" BEL "wbgm/cache2_23" BEL
+        "wbgm/cache2_22" BEL "wbgm/cache2_21" BEL "wbgm/cache2_20" BEL
+        "wbgm/cache2_19" BEL "wbgm/cache2_18" BEL "wbgm/cache2_17" BEL
+        "wbgm/cache2_16" BEL "wbgm/cache2_15" BEL "wbgm/cache2_14" BEL
+        "wbgm/cache2_13" BEL "wbgm/cache2_12" BEL "wbgm/cache2_11" BEL
+        "wbgm/cache2_10" BEL "wbgm/cache2_9" BEL "wbgm/cache2_8" BEL
+        "wbgm/cache2_7" BEL "wbgm/cache2_6" BEL "wbgm/cache2_5" BEL
+        "wbgm/cache2_4" BEL "wbgm/cache2_3" BEL "wbgm/cache2_2" BEL
+        "wbgm/cache2_1" BEL "wbgm/cache2_0" BEL "wbgm/cache0_81" BEL
+        "wbgm/cache0_80" BEL "wbgm/cache0_79" BEL "wbgm/cache0_78" BEL
+        "wbgm/cache0_77" BEL "wbgm/cache0_76" BEL "wbgm/cache0_75" BEL
+        "wbgm/cache0_74" BEL "wbgm/cache0_73" BEL "wbgm/cache0_72" BEL
+        "wbgm/cache0_71" BEL "wbgm/cache0_70" BEL "wbgm/cache0_69" BEL
+        "wbgm/cache0_68" BEL "wbgm/cache0_67" BEL "wbgm/cache0_66" BEL
+        "wbgm/cache0_65" BEL "wbgm/cache0_64" BEL "wbgm/cache0_63" BEL
+        "wbgm/cache0_62" BEL "wbgm/cache0_61" BEL "wbgm/cache0_60" BEL
+        "wbgm/cache0_59" BEL "wbgm/cache0_58" BEL "wbgm/cache0_57" BEL
+        "wbgm/cache0_56" BEL "wbgm/cache0_55" BEL "wbgm/cache0_54" BEL
+        "wbgm/cache0_53" BEL "wbgm/cache0_52" BEL "wbgm/cache0_51" BEL
+        "wbgm/cache0_50" BEL "wbgm/cache0_49" BEL "wbgm/cache0_48" BEL
+        "wbgm/cache0_47" BEL "wbgm/cache0_46" BEL "wbgm/cache0_45" BEL
+        "wbgm/cache0_44" BEL "wbgm/cache0_43" BEL "wbgm/cache0_42" BEL
+        "wbgm/cache0_41" BEL "wbgm/cache0_40" BEL "wbgm/cache0_39" BEL
+        "wbgm/cache0_38" BEL "wbgm/cache0_37" BEL "wbgm/cache0_36" BEL
+        "wbgm/cache0_35" BEL "wbgm/cache0_34" BEL "wbgm/cache0_33" BEL
+        "wbgm/cache0_32" BEL "wbgm/cache0_31" BEL "wbgm/cache0_30" BEL
+        "wbgm/cache0_29" BEL "wbgm/cache0_28" BEL "wbgm/cache0_27" BEL
+        "wbgm/cache0_26" BEL "wbgm/cache0_25" BEL "wbgm/cache0_24" BEL
+        "wbgm/cache0_23" BEL "wbgm/cache0_22" BEL "wbgm/cache0_21" BEL
+        "wbgm/cache0_20" BEL "wbgm/cache0_19" BEL "wbgm/cache0_18" BEL
+        "wbgm/cache0_17" BEL "wbgm/cache0_16" BEL "wbgm/cache0_15" BEL
+        "wbgm/cache0_14" BEL "wbgm/cache0_13" BEL "wbgm/cache0_12" BEL
+        "wbgm/cache0_11" BEL "wbgm/cache0_10" BEL "wbgm/cache0_9" BEL
+        "wbgm/cache0_8" BEL "wbgm/cache0_7" BEL "wbgm/cache0_6" BEL
+        "wbgm/cache0_5" BEL "wbgm/cache0_4" BEL "wbgm/cache0_3" BEL
+        "wbgm/cache0_2" BEL "wbgm/cache0_1" BEL "wbgm/cache0_0" BEL
+        "wbgm/cache2G_9" BEL "wbgm/cache1_81" BEL "wbgm/cache1_80" BEL
+        "wbgm/cache1_79" BEL "wbgm/cache1_78" BEL "wbgm/cache1_77" BEL
+        "wbgm/cache1_76" BEL "wbgm/cache1_75" BEL "wbgm/cache1_74" BEL
+        "wbgm/cache1_73" BEL "wbgm/cache1_72" BEL "wbgm/cache1_71" BEL
+        "wbgm/cache1_70" BEL "wbgm/cache1_69" BEL "wbgm/cache1_68" BEL
+        "wbgm/cache1_67" BEL "wbgm/cache1_66" BEL "wbgm/cache1_65" BEL
+        "wbgm/cache1_64" BEL "wbgm/cache1_63" BEL "wbgm/cache1_62" BEL
+        "wbgm/cache1_61" BEL "wbgm/cache1_60" BEL "wbgm/cache1_59" BEL
+        "wbgm/cache1_58" BEL "wbgm/cache1_57" BEL "wbgm/cache1_56" BEL
+        "wbgm/cache1_55" BEL "wbgm/cache1_54" BEL "wbgm/cache1_53" BEL
+        "wbgm/cache1_52" BEL "wbgm/cache1_51" BEL "wbgm/cache1_50" BEL
+        "wbgm/cache1_49" BEL "wbgm/cache1_48" BEL "wbgm/cache1_47" BEL
+        "wbgm/cache1_46" BEL "wbgm/cache1_45" BEL "wbgm/cache1_44" BEL
+        "wbgm/cache1_43" BEL "wbgm/cache1_42" BEL "wbgm/cache1_41" BEL
+        "wbgm/cache1_40" BEL "wbgm/cache1_39" BEL "wbgm/cache1_38" BEL
+        "wbgm/cache1_37" BEL "wbgm/cache1_36" BEL "wbgm/cache1_35" BEL
+        "wbgm/cache1_34" BEL "wbgm/cache1_33" BEL "wbgm/cache1_32" BEL
+        "wbgm/cache1_31" BEL "wbgm/cache1_30" BEL "wbgm/cache1_29" BEL
+        "wbgm/cache1_28" BEL "wbgm/cache1_27" BEL "wbgm/cache1_26" BEL
+        "wbgm/cache1_25" BEL "wbgm/cache1_24" BEL "wbgm/cache1_23" BEL
+        "wbgm/cache1_22" BEL "wbgm/cache1_21" BEL "wbgm/cache1_20" BEL
+        "wbgm/cache1_19" BEL "wbgm/cache1_18" BEL "wbgm/cache1_17" BEL
+        "wbgm/cache1_16" BEL "wbgm/cache1_15" BEL "wbgm/cache1_14" BEL
+        "wbgm/cache1_13" BEL "wbgm/cache1_12" BEL "wbgm/cache1_11" BEL
+        "wbgm/cache1_10" BEL "wbgm/cache1_9" BEL "wbgm/cache1_8" BEL
+        "wbgm/cache1_7" BEL "wbgm/cache1_6" BEL "wbgm/cache1_5" BEL
+        "wbgm/cache1_4" BEL "wbgm/cache1_3" BEL "wbgm/cache1_2" BEL
+        "wbgm/cache1_1" BEL "wbgm/cache1_0" BEL "wbgm/cache2G_8" BEL
+        "wbgm/nextB_8" BEL "wbgm/cache2G_7" BEL "wbgm/nextB_7" BEL
+        "wbgm/cache2G_6" BEL "wbgm/cache2G_5" BEL "wbgm/nextB_5" BEL
+        "wbgm/nextB_6" BEL "wbgm/cache2G_4" BEL "wbgm/nextB_4" BEL
+        "wbgm/cache2G_3" BEL "wbgm/nextB_3" BEL "wbgm/cache2G_2" BEL
+        "wbgm/nextB_2" BEL "wbgm/cache2G_0" BEL "wbgm/cache2G_1" BEL
+        "wbgm/dataReg_30" BEL "wbgm/dataReg_29" BEL "wbgm/dataReg_28" BEL
+        "wbgm/dataReg_26" BEL "wbgm/dataReg_25" BEL "wbgm/dataReg_24" BEL
+        "wbgm/dataReg_22" BEL "wbgm/dataReg_21" BEL "wbgm/dataReg_20" BEL
+        "wbgm/dataReg_18" BEL "wbgm/dataReg_17" BEL "wbgm/dataReg_16" BEL
+        "wbgm/dataReg_14" BEL "wbgm/dataReg_13" BEL "wbgm/dataReg_12" BEL
+        "wbgm/dataReg_10" BEL "wbgm/dataReg_9" BEL "wbgm/dataReg_8" BEL
+        "wbgm/dataReg_6" BEL "wbgm/dataReg_5" BEL "wbgm/dataReg_4" BEL
+        "wbgm/dataReg_2" BEL "wbgm/dataReg_1" BEL "wbgm/dataReg_0" BEL
+        "wbgm/dCol_31" BEL "wbgm/dCol_30" BEL "wbgm/dCol_29" BEL
+        "wbgm/dCol_28" BEL "wbgm/dCol_27" BEL "wbgm/dCol_26" BEL
+        "wbgm/dCol_25" BEL "wbgm/dCol_24" BEL "wbgm/dCol_23" BEL
+        "wbgm/dCol_22" BEL "wbgm/dCol_21" BEL "wbgm/dCol_20" BEL
+        "wbgm/dCol_19" BEL "wbgm/dCol_18" BEL "wbgm/dCol_17" BEL
+        "wbgm/dCol_16" BEL "wbgm/dCol_15" BEL "wbgm/dCol_14" BEL
+        "wbgm/dCol_13" BEL "wbgm/dCol_12" BEL "wbgm/dCol_11" BEL
+        "wbgm/dCol_10" BEL "wbgm/dCol_9" BEL "wbgm/dCol_8" BEL "wbgm/dCol_7"
+        BEL "wbgm/dCol_6" BEL "wbgm/dCol_5" BEL "wbgm/dCol_4" BEL
+        "wbgm/dCol_3" BEL "wbgm/dCol_2" BEL "wbgm/dCol_1" BEL "wbgm/dCol_0"
+        BEL "wbgm/cache2B_9" BEL "wbgm/cache2B_8" BEL "wbgm/cache2B_7" BEL
+        "wbgm/cache2B_6" BEL "wbgm/cache2B_5" BEL "wbgm/cache2B_4" BEL
+        "wbgm/cache2B_3" BEL "wbgm/cache2B_1" BEL "wbgm/cache2B_0" BEL
+        "wbgm/cache2B_2" BEL "wbgm/cache1G_81" BEL "wbgm/cache1G_80" BEL
+        "wbgm/cache1G_79" BEL "wbgm/cache1G_78" BEL "wbgm/cache1G_77" BEL
+        "wbgm/cache1G_76" BEL "wbgm/cache1G_75" BEL "wbgm/cache1G_74" BEL
+        "wbgm/cache1G_73" BEL "wbgm/cache1G_72" BEL "wbgm/cache1G_71" BEL
+        "wbgm/cache1G_70" BEL "wbgm/cache1G_69" BEL "wbgm/cache1G_68" BEL
+        "wbgm/cache1G_67" BEL "wbgm/cache1G_66" BEL "wbgm/cache1G_65" BEL
+        "wbgm/cache1G_64" BEL "wbgm/cache1G_63" BEL "wbgm/cache1G_62" BEL
+        "wbgm/cache1G_61" BEL "wbgm/cache1G_60" BEL "wbgm/cache1G_59" BEL
+        "wbgm/cache1G_58" BEL "wbgm/cache1G_57" BEL "wbgm/cache1G_56" BEL
+        "wbgm/cache1G_55" BEL "wbgm/cache1G_54" BEL "wbgm/cache1G_53" BEL
+        "wbgm/cache1G_52" BEL "wbgm/cache1G_51" BEL "wbgm/cache1G_50" BEL
+        "wbgm/cache1G_49" BEL "wbgm/cache1G_48" BEL "wbgm/cache1G_47" BEL
+        "wbgm/cache1G_46" BEL "wbgm/cache1G_45" BEL "wbgm/cache1G_44" BEL
+        "wbgm/cache1G_43" BEL "wbgm/cache1G_42" BEL "wbgm/cache1G_41" BEL
+        "wbgm/cache1G_40" BEL "wbgm/cache1G_39" BEL "wbgm/cache1G_38" BEL
+        "wbgm/cache1G_37" BEL "wbgm/cache1G_36" BEL "wbgm/cache1G_35" BEL
+        "wbgm/cache1G_34" BEL "wbgm/cache1G_33" BEL "wbgm/cache1G_32" BEL
+        "wbgm/cache1G_31" BEL "wbgm/cache1G_30" BEL "wbgm/cache1G_29" BEL
+        "wbgm/cache1G_28" BEL "wbgm/cache1G_27" BEL "wbgm/cache1G_26" BEL
+        "wbgm/cache1G_25" BEL "wbgm/cache1G_24" BEL "wbgm/cache1G_23" BEL
+        "wbgm/cache1G_22" BEL "wbgm/cache1G_21" BEL "wbgm/cache1G_20" BEL
+        "wbgm/cache1G_19" BEL "wbgm/cache1G_18" BEL "wbgm/cache1G_17" BEL
+        "wbgm/cache1G_16" BEL "wbgm/cache1G_15" BEL "wbgm/cache1G_14" BEL
+        "wbgm/cache1G_13" BEL "wbgm/cache1G_12" BEL "wbgm/cache1G_11" BEL
+        "wbgm/cache1G_10" BEL "wbgm/cache1G_9" BEL "wbgm/cache1G_8" BEL
+        "wbgm/cache1G_7" BEL "wbgm/cache1G_6" BEL "wbgm/cache1G_5" BEL
+        "wbgm/cache1G_4" BEL "wbgm/cache1G_3" BEL "wbgm/cache1G_2" BEL
+        "wbgm/cache1G_1" BEL "wbgm/cache1G_0" BEL "wbgm/cache0G_81" BEL
+        "wbgm/cache0G_80" BEL "wbgm/cache0G_79" BEL "wbgm/cache0G_78" BEL
+        "wbgm/cache0G_77" BEL "wbgm/cache0G_76" BEL "wbgm/cache0G_75" BEL
+        "wbgm/cache0G_74" BEL "wbgm/cache0G_73" BEL "wbgm/cache0G_72" BEL
+        "wbgm/cache0G_71" BEL "wbgm/cache0G_70" BEL "wbgm/cache0G_69" BEL
+        "wbgm/cache0G_68" BEL "wbgm/cache0G_67" BEL "wbgm/cache0G_66" BEL
+        "wbgm/cache0G_65" BEL "wbgm/cache0G_64" BEL "wbgm/cache0G_63" BEL
+        "wbgm/cache0G_62" BEL "wbgm/cache0G_61" BEL "wbgm/cache0G_60" BEL
+        "wbgm/cache0G_59" BEL "wbgm/cache0G_58" BEL "wbgm/cache0G_57" BEL
+        "wbgm/cache0G_56" BEL "wbgm/cache0G_55" BEL "wbgm/cache0G_54" BEL
+        "wbgm/cache0G_53" BEL "wbgm/cache0G_52" BEL "wbgm/cache0G_51" BEL
+        "wbgm/cache0G_50" BEL "wbgm/cache0G_49" BEL "wbgm/cache0G_48" BEL
+        "wbgm/cache0G_47" BEL "wbgm/cache0G_46" BEL "wbgm/cache0G_45" BEL
+        "wbgm/cache0G_44" BEL "wbgm/cache0G_43" BEL "wbgm/cache0G_42" BEL
+        "wbgm/cache0G_41" BEL "wbgm/cache0G_40" BEL "wbgm/cache0G_39" BEL
+        "wbgm/cache0G_38" BEL "wbgm/cache0G_37" BEL "wbgm/cache0G_36" BEL
+        "wbgm/cache0G_35" BEL "wbgm/cache0G_34" BEL "wbgm/cache0G_33" BEL
+        "wbgm/cache0G_32" BEL "wbgm/cache0G_31" BEL "wbgm/cache0G_30" BEL
+        "wbgm/cache0G_29" BEL "wbgm/cache0G_28" BEL "wbgm/cache0G_27" BEL
+        "wbgm/cache0G_26" BEL "wbgm/cache0G_25" BEL "wbgm/cache0G_24" BEL
+        "wbgm/cache0G_23" BEL "wbgm/cache0G_22" BEL "wbgm/cache0G_21" BEL
+        "wbgm/cache0G_20" BEL "wbgm/cache0G_19" BEL "wbgm/cache0G_18" BEL
+        "wbgm/cache0G_17" BEL "wbgm/cache0G_16" BEL "wbgm/cache0G_15" BEL
+        "wbgm/cache0G_14" BEL "wbgm/cache0G_13" BEL "wbgm/cache0G_12" BEL
+        "wbgm/cache0G_11" BEL "wbgm/cache0G_10" BEL "wbgm/cache0G_9" BEL
+        "wbgm/cache0G_8" BEL "wbgm/cache0G_7" BEL "wbgm/cache0G_6" BEL
+        "wbgm/cache0G_5" BEL "wbgm/cache0G_4" BEL "wbgm/cache0G_3" BEL
+        "wbgm/cache0G_2" BEL "wbgm/cache0G_1" BEL "wbgm/cache0G_0" BEL
+        "wbgm/cache1B_81" BEL "wbgm/cache1B_80" BEL "wbgm/cache1B_79" BEL
+        "wbgm/cache1B_78" BEL "wbgm/cache1B_77" BEL "wbgm/cache1B_76" BEL
+        "wbgm/cache1B_75" BEL "wbgm/cache1B_74" BEL "wbgm/cache1B_73" BEL
+        "wbgm/cache1B_72" BEL "wbgm/cache1B_71" BEL "wbgm/cache1B_70" BEL
+        "wbgm/cache1B_69" BEL "wbgm/cache1B_68" BEL "wbgm/cache1B_67" BEL
+        "wbgm/cache1B_66" BEL "wbgm/cache1B_65" BEL "wbgm/cache1B_64" BEL
+        "wbgm/cache1B_63" BEL "wbgm/cache1B_62" BEL "wbgm/cache1B_61" BEL
+        "wbgm/cache1B_60" BEL "wbgm/cache1B_59" BEL "wbgm/cache1B_58" BEL
+        "wbgm/cache1B_57" BEL "wbgm/cache1B_56" BEL "wbgm/cache1B_55" BEL
+        "wbgm/cache1B_54" BEL "wbgm/cache1B_53" BEL "wbgm/cache1B_52" BEL
+        "wbgm/cache1B_51" BEL "wbgm/cache1B_50" BEL "wbgm/cache1B_49" BEL
+        "wbgm/cache1B_48" BEL "wbgm/cache1B_47" BEL "wbgm/cache1B_46" BEL
+        "wbgm/cache1B_45" BEL "wbgm/cache1B_44" BEL "wbgm/cache1B_43" BEL
+        "wbgm/cache1B_42" BEL "wbgm/cache1B_41" BEL "wbgm/cache1B_40" BEL
+        "wbgm/cache1B_39" BEL "wbgm/cache1B_38" BEL "wbgm/cache1B_37" BEL
+        "wbgm/cache1B_36" BEL "wbgm/cache1B_35" BEL "wbgm/cache1B_34" BEL
+        "wbgm/cache1B_33" BEL "wbgm/cache1B_32" BEL "wbgm/cache1B_31" BEL
+        "wbgm/cache1B_30" BEL "wbgm/cache1B_29" BEL "wbgm/cache1B_28" BEL
+        "wbgm/cache1B_27" BEL "wbgm/cache1B_26" BEL "wbgm/cache1B_25" BEL
+        "wbgm/cache1B_24" BEL "wbgm/cache1B_23" BEL "wbgm/cache1B_22" BEL
+        "wbgm/cache1B_21" BEL "wbgm/cache1B_20" BEL "wbgm/cache1B_19" BEL
+        "wbgm/cache1B_18" BEL "wbgm/cache1B_17" BEL "wbgm/cache1B_16" BEL
+        "wbgm/cache1B_15" BEL "wbgm/cache1B_14" BEL "wbgm/cache1B_13" BEL
+        "wbgm/cache1B_12" BEL "wbgm/cache1B_11" BEL "wbgm/cache1B_10" BEL
+        "wbgm/cache1B_9" BEL "wbgm/cache1B_8" BEL "wbgm/cache1B_7" BEL
+        "wbgm/cache1B_6" BEL "wbgm/cache1B_5" BEL "wbgm/cache1B_4" BEL
+        "wbgm/cache1B_3" BEL "wbgm/cache1B_2" BEL "wbgm/cache1B_1" BEL
+        "wbgm/cache1B_0" BEL "wbgm/cache0B_81" BEL "wbgm/cache0B_80" BEL
+        "wbgm/cache0B_79" BEL "wbgm/cache0B_78" BEL "wbgm/cache0B_77" BEL
+        "wbgm/cache0B_76" BEL "wbgm/cache0B_75" BEL "wbgm/cache0B_74" BEL
+        "wbgm/cache0B_73" BEL "wbgm/cache0B_72" BEL "wbgm/cache0B_71" BEL
+        "wbgm/cache0B_70" BEL "wbgm/cache0B_69" BEL "wbgm/cache0B_68" BEL
+        "wbgm/cache0B_67" BEL "wbgm/cache0B_66" BEL "wbgm/cache0B_65" BEL
+        "wbgm/cache0B_64" BEL "wbgm/cache0B_63" BEL "wbgm/cache0B_62" BEL
+        "wbgm/cache0B_61" BEL "wbgm/cache0B_60" BEL "wbgm/cache0B_59" BEL
+        "wbgm/cache0B_58" BEL "wbgm/cache0B_57" BEL "wbgm/cache0B_56" BEL
+        "wbgm/cache0B_55" BEL "wbgm/cache0B_54" BEL "wbgm/cache0B_53" BEL
+        "wbgm/cache0B_52" BEL "wbgm/cache0B_51" BEL "wbgm/cache0B_50" BEL
+        "wbgm/cache0B_49" BEL "wbgm/cache0B_48" BEL "wbgm/cache0B_47" BEL
+        "wbgm/cache0B_46" BEL "wbgm/cache0B_45" BEL "wbgm/cache0B_44" BEL
+        "wbgm/cache0B_43" BEL "wbgm/cache0B_42" BEL "wbgm/cache0B_41" BEL
+        "wbgm/cache0B_40" BEL "wbgm/cache0B_39" BEL "wbgm/cache0B_38" BEL
+        "wbgm/cache0B_37" BEL "wbgm/cache0B_36" BEL "wbgm/cache0B_35" BEL
+        "wbgm/cache0B_34" BEL "wbgm/cache0B_33" BEL "wbgm/cache0B_32" BEL
+        "wbgm/cache0B_31" BEL "wbgm/cache0B_30" BEL "wbgm/cache0B_29" BEL
+        "wbgm/cache0B_28" BEL "wbgm/cache0B_27" BEL "wbgm/cache0B_26" BEL
+        "wbgm/cache0B_25" BEL "wbgm/cache0B_24" BEL "wbgm/cache0B_23" BEL
+        "wbgm/cache0B_22" BEL "wbgm/cache0B_21" BEL "wbgm/cache0B_20" BEL
+        "wbgm/cache0B_19" BEL "wbgm/cache0B_18" BEL "wbgm/cache0B_17" BEL
+        "wbgm/cache0B_16" BEL "wbgm/cache0B_15" BEL "wbgm/cache0B_14" BEL
+        "wbgm/cache0B_13" BEL "wbgm/cache0B_12" BEL "wbgm/cache0B_11" BEL
+        "wbgm/cache0B_10" BEL "wbgm/cache0B_9" BEL "wbgm/cache0B_8" BEL
+        "wbgm/cache0B_7" BEL "wbgm/cache0B_6" BEL "wbgm/cache0B_5" BEL
+        "wbgm/cache0B_4" BEL "wbgm/cache0B_3" BEL "wbgm/cache0B_2" BEL
+        "wbgm/cache0B_1" BEL "wbgm/cache0B_0" BEL "wbgm/nextG_9" BEL
+        "wbgm/nextG_8" BEL "wbgm/nextG_6" BEL "wbgm/nextG_5" BEL
+        "wbgm/nextG_7" BEL "wbgm/nextG_4" BEL "wbgm/nextG_3" BEL
+        "wbgm/nextG_2" BEL "wbgm/nextG_1" BEL "wbgm/nextG_79" BEL
+        "wbgm/nextG_78" BEL "wbgm/nextG_76" BEL "wbgm/nextG_80" BEL
+        "wbgm/nextG_77" BEL "wbgm/nextG_75" BEL "wbgm/cache2G_79" BEL
+        "wbgm/nextG_74" BEL "wbgm/nextG_69" BEL "wbgm/nextG_73" BEL
+        "wbgm/nextG_68" BEL "wbgm/cache2G_78" BEL "wbgm/cache2G_77" BEL
+        "wbgm/nextG_67" BEL "wbgm/nextaddr_17" BEL "wbgm/nextaddr_16" BEL
+        "wbgm/nextaddr_15" BEL "wbgm/nextaddr_14" BEL "wbgm/nextaddr_13" BEL
+        "wbgm/nextaddr_12" BEL "wbgm/nextaddr_11" BEL "wbgm/nextaddr_10" BEL
+        "wbgm/nextaddr_9" BEL "wbgm/nextaddr_8" BEL "wbgm/nextaddr_7" BEL
+        "wbgm/nextaddr_6" BEL "wbgm/nextaddr_5" BEL "wbgm/nextaddr_4" BEL
+        "wbgm/nextaddr_3" BEL "wbgm/nextaddr_2" BEL "wbgm/nextaddr_1" BEL
+        "wbgm/nextaddr_0" BEL "wbgm/nextG_72" BEL "wbgm/nextB_79" BEL
+        "wbgm/cache2G_76" BEL "wbgm/nextG_71" BEL "wbgm/cache2G_81" BEL
+        "wbgm/nextG_66" BEL "wbgm/cache2G_80" BEL "wbgm/cache2G_75" BEL
+        "wbgm/nextG_70" BEL "wbgm/nextB_77" BEL "wbgm/nextG_65" BEL
+        "wbgm/cache2G_74" BEL "wbgm/cache2G_69" BEL "wbgm/nextG_64" BEL
+        "wbgm/nextG_59" BEL "wbgm/nextB_76" BEL "wbgm/cache2G_68" BEL
+        "wbgm/nextG_63" BEL "wbgm/cache2G_73" BEL "wbgm/nextG_58" BEL
+        "wbgm/dat_o_29" BEL "wbgm/nextB_80" BEL "wbgm/nextB_75" BEL
+        "wbgm/cache2G_72" BEL "wbgm/nextG_62" BEL "wbgm/nextG_57" BEL
+        "wbgm/cache2G_67" BEL "wbgm/dat_o_28" BEL "wbgm/cache2B_79" BEL
+        "wbgm/nextB_74" BEL "wbgm/nextB_69" BEL "wbgm/cache2G_71" BEL
+        "wbgm/nextG_56" BEL "wbgm/nextG_61" BEL "wbgm/cache2G_66" BEL
+        "wbgm/cache2B_78" BEL "wbgm/nextB_73" BEL "wbgm/nextB_68" BEL
+        "wbgm/cache2G_70" BEL "wbgm/cache2G_65" BEL "wbgm/nextG_55" BEL
+        "wbgm/cache2B_77" BEL "wbgm/nextB_72" BEL "wbgm/nextG_60" BEL
+        "wbgm/nextB_67" BEL "wbgm/cache2G_64" BEL "wbgm/cache2G_59" BEL
+        "wbgm/nextG_49" BEL "wbgm/nextG_54" BEL "wbgm/dat_o_25" BEL
+        "wbgm/cache2B_76" BEL "wbgm/nextB_71" BEL "wbgm/cache2B_81" BEL
+        "wbgm/nextB_66" BEL "wbgm/cache2G_63" BEL "wbgm/cache2G_58" BEL
+        "wbgm/nextG_48" BEL "wbgm/nextG_53" BEL "wbgm/adr_oI_17" BEL
+        "wbgm/adr_oI_16" BEL "wbgm/adr_oI_15" BEL "wbgm/adr_oI_14" BEL
+        "wbgm/adr_oI_13" BEL "wbgm/adr_oI_12" BEL "wbgm/adr_oI_11" BEL
+        "wbgm/adr_oI_10" BEL "wbgm/adr_oI_9" BEL "wbgm/adr_oI_8" BEL
+        "wbgm/adr_oI_7" BEL "wbgm/adr_oI_6" BEL "wbgm/adr_oI_5" BEL
+        "wbgm/adr_oI_4" BEL "wbgm/adr_oI_3" BEL "wbgm/adr_oI_2" BEL
+        "wbgm/adr_oI_1" BEL "wbgm/adr_oI_0" BEL "wbgm/cache2B_80" BEL
+        "wbgm/cache2B_75" BEL "wbgm/dat_o_24" BEL "wbgm/nextB_65" BEL
+        "wbgm/cache2G_62" BEL "wbgm/cache2G_57" BEL "wbgm/nextG_47" BEL
+        "wbgm/nextG_52" BEL "wbgm/cache2B_69" BEL "wbgm/nextB_64" BEL
+        "wbgm/cache2B_74" BEL "wbgm/nextB_59" BEL "wbgm/cache2G_56" BEL
+        "wbgm/cache2G_61" BEL "wbgm/nextG_46" BEL "wbgm/nextG_51" BEL
+        "wbgm/dat_o_17" BEL "wbgm/cache2B_68" BEL "wbgm/cache2B_73" BEL
+        "wbgm/nextB_58" BEL "wbgm/cache2G_55" BEL "wbgm/cache2G_60" BEL
+        "wbgm/nextG_45" BEL "wbgm/nextG_50" BEL "wbgm/dat_o_21" BEL
+        "wbgm/cache2B_72" BEL "wbgm/cache2B_67" BEL "wbgm/dat_o_16" BEL
+        "wbgm/nextB_62" BEL "wbgm/nextB_57" BEL "wbgm/cache2G_49" BEL
+        "wbgm/cache2G_54" BEL "wbgm/nextG_39" BEL "wbgm/nextG_44" BEL
+        "wbgm/cache2B_71" BEL "wbgm/cache2B_66" BEL "wbgm/dat_o_20" BEL
+        "wbgm/nextB_61" BEL "wbgm/cache2G_48" BEL "wbgm/cache2G_53" BEL
+        "wbgm/nextG_38" BEL "wbgm/nextG_43" BEL "wbgm/cache2B_65" BEL
+        "wbgm/nextB_60" BEL "wbgm/cache2B_70" BEL "wbgm/nextB_55" BEL
+        "wbgm/cache2G_47" BEL "wbgm/cache2G_52" BEL "wbgm/nextG_37" BEL
+        "wbgm/nextG_42" BEL "wbgm/dat_o_13" BEL "wbgm/cache2B_59" BEL
+        "wbgm/nextB_54" BEL "wbgm/cache2B_64" BEL "wbgm/cache2G_46" BEL
+        "wbgm/cache2G_51" BEL "wbgm/nextG_36" BEL "wbgm/nextG_41" BEL
+        "wbgm/dat_o_12" BEL "wbgm/cache2B_58" BEL "wbgm/nextB_53" BEL
+        "wbgm/cache2B_63" BEL "wbgm/nextB_48" BEL "wbgm/cache2G_45" BEL
+        "wbgm/cache2G_50" BEL "wbgm/nextG_35" BEL "wbgm/nextG_40" BEL
+        "wbgm/cache2B_62" BEL "wbgm/nextB_47" BEL "wbgm/cache2B_57" BEL
+        "wbgm/cache2G_39" BEL "wbgm/cache2G_44" BEL "wbgm/nextG_34" BEL
+        "wbgm/cache2B_61" BEL "wbgm/nextG_29" BEL "wbgm/cache2B_56" BEL
+        "wbgm/nextB_51" BEL "wbgm/cache2G_38" BEL "wbgm/cache2G_43" BEL
+        "wbgm/nextB_46" BEL "wbgm/nextG_28" BEL "wbgm/nextG_33" BEL
+        "wbgm/cache2B_60" BEL "wbgm/cache2B_55" BEL "wbgm/nextB_50" BEL
+        "wbgm/cache2G_42" BEL "wbgm/nextG_27" BEL "wbgm/cache2G_37" BEL
+        "wbgm/nextG_32" BEL "wbgm/cache2B_54" BEL "wbgm/cache2B_49" BEL
+        "wbgm/nextB_44" BEL "wbgm/nextB_39" BEL "wbgm/cache2G_36" BEL
+        "wbgm/nextG_26" BEL "wbgm/nextG_31" BEL "wbgm/cache2G_41" BEL
+        "wbgm/cache2B_53" BEL "wbgm/cache2B_48" BEL "wbgm/nextB_43" BEL
+        "wbgm/nextB_38" BEL "wbgm/cache2G_35" BEL "wbgm/cache2G_40" BEL
+        "wbgm/nextG_30" BEL "wbgm/cache2B_52" BEL "wbgm/nextG_25" BEL
+        "wbgm/cache2B_47" BEL "wbgm/nextB_42" BEL "wbgm/nextB_37" BEL
+        "wbgm/cache2G_29" BEL "wbgm/cache2G_34" BEL "wbgm/nextG_19" BEL
+        "wbgm/cache2B_51" BEL "wbgm/cache2B_46" BEL "wbgm/nextG_24" BEL
+        "wbgm/nextB_41" BEL "wbgm/nextB_36" BEL "wbgm/cache2G_28" BEL
+        "wbgm/cache2G_33" BEL "wbgm/nextG_18" BEL "wbgm/nextG_23" BEL
+        "wbgm/cache2B_45" BEL "wbgm/nextB_40" BEL "wbgm/cache2B_50" BEL
+        "wbgm/nextB_35" BEL "wbgm/cache2G_27" BEL "wbgm/cache2G_32" BEL
+        "wbgm/nextG_17" BEL "wbgm/nextG_22" BEL "wbgm/cache2B_44" BEL
+        "wbgm/nextB_34" BEL "wbgm/nextB_29" BEL "wbgm/cache2B_39" BEL
+        "wbgm/cache2G_31" BEL "wbgm/cache2G_26" BEL "wbgm/nextG_16" BEL
+        "wbgm/nextG_21" BEL "wbgm/cache2B_43" BEL "wbgm/cache2B_38" BEL
+        "wbgm/nextB_28" BEL "wbgm/cache2G_30" BEL "wbgm/nextB_33" BEL
+        "wbgm/cache2G_25" BEL "wbgm/nextG_15" BEL "wbgm/cache2B_42" BEL
+        "wbgm/cache2B_37" BEL "wbgm/nextG_20" BEL "wbgm/nextB_32" BEL
+        "wbgm/nextB_27" BEL "wbgm/cache2G_24" BEL "wbgm/nextG_14" BEL
+        "wbgm/cache2G_19" BEL "wbgm/cache2B_41" BEL "wbgm/cache2B_36" BEL
+        "wbgm/nextB_31" BEL "wbgm/nextB_26" BEL "wbgm/cache2G_23" BEL
+        "wbgm/cache2G_18" BEL "wbgm/cache2B_40" BEL "wbgm/cache2B_35" BEL
+        "wbgm/nextG_13" BEL "wbgm/nextB_30" BEL "wbgm/nextB_25" BEL
+        "wbgm/cache2G_22" BEL "wbgm/cache2G_17" BEL "wbgm/nextG_12" BEL
+        "wbgm/cache2B_34" BEL "wbgm/nextB_24" BEL "wbgm/nextB_19" BEL
+        "wbgm/cache2B_29" BEL "wbgm/cache2G_21" BEL "wbgm/cache2G_16" BEL
+        "wbgm/nextG_11" BEL "wbgm/cache2B_33" BEL "wbgm/cache2B_28" BEL
+        "wbgm/nextB_23" BEL "wbgm/cache2G_20" BEL "wbgm/cache2G_15" BEL
+        "wbgm/nextB_18" BEL "wbgm/nextG_10" BEL "wbgm/cache2B_32" BEL
+        "wbgm/cache2B_27" BEL "wbgm/nextB_22" BEL "wbgm/nextB_17" BEL
+        "wbgm/cache2G_14" BEL "wbgm/cache2B_26" BEL "wbgm/nextB_21" BEL
+        "wbgm/cache2B_31" BEL "wbgm/nextB_16" BEL "wbgm/cache2G_13" BEL
+        "wbgm/cache2B_30" BEL "wbgm/cache2B_25" BEL "wbgm/nextB_20" BEL
+        "wbgm/nextB_15" BEL "wbgm/cache2B_19" BEL "wbgm/cache2B_24" BEL
+        "wbgm/cache2G_12" BEL "wbgm/nextB_14" BEL "wbgm/cache2G_11" BEL
+        "wbgm/cache2B_18" BEL "wbgm/cache2B_23" BEL "wbgm/nextB_13" BEL
+        "wbgm/cache2G_10" BEL "wbgm/cache2B_17" BEL "wbgm/cache2B_22" BEL
+        "wbgm/dat_o_9" BEL "wbgm/nextB_12" BEL "wbgm/dat_o_8" BEL
+        "wbgm/cache2B_16" BEL "wbgm/cache2B_21" BEL "wbgm/nextB_11" BEL
+        "wbgm/cache2B_15" BEL "wbgm/nextB_10" BEL "wbgm/cache2B_14" BEL
+        "wbgm/cache2B_20" BEL "wbgm/dat_o_5" BEL "wbgm/dat_o_4" BEL
+        "wbgm/cache2B_12" BEL "wbgm/cache2B_13" BEL "wbgm/cache2B_11" BEL
+        "wbgm/cache2B_10" BEL "wbint/U08/LMAS0" BEL "wbvga/clk_divider/clk"
+        BEL "wbvga/state_FSM_FFd2" BEL "wbvga/state_FSM_FFd1" BEL
+        "wbvga/word_count_6" BEL "wbvga/word_count_5" BEL "wbvga/word_count_4"
+        BEL "wbvga/word_count_3" BEL "wbvga/word_count_2" BEL
+        "wbvga/word_count_1" BEL "wbvga/word_count_0" BEL "wbint/U08/LGNT0"
+        BEL "wbint/U08/LGNT1" BEL "wbint/U08/EDGE" BEL "wbint/U08/LASMAS" PIN
+        "wbvga/gen1.gen2.bram.A_pins<15>" PIN
+        "wbvga/gen1.gen2.bram.B_pins<15>";
+TS_sys_clk = PERIOD TIMEGRP "sys_clk" 20 ns HIGH 50%;
+SCHEMATIC END;
+

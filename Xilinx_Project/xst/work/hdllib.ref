@@ -1,0 +1,14 @@
+EN vga640x480 NULL "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/wb_vga640x480.vhd" sub00/vhpl10 1267976592
+EN wb_game NULL "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/wb_game.vhd" sub00/vhpl06 1267976588
+AR wb_intercon icn0002a1 "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/wb_intercon.vhd" sub00/vhpl05 1267976587
+EN sramctl NULL "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/sramctl.vhd" sub00/vhpl08 1267976590
+AR clock_divider behavioral "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/clock_divider.vhd" sub00/vhpl01 1267976583
+AR wb_game behavioral "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/wb_game.vhd" sub00/vhpl07 1267976589
+EN gameoflife NULL "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/GameOfLife.vhd" sub00/vhpl12 1267976594
+EN clock_divider NULL "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/clock_divider.vhd" sub00/vhpl00 1267976582
+AR wb_arbiter arb0001a1 "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/wb_arbiter.vhd" sub00/vhpl03 1267976585
+EN wb_arbiter NULL "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/wb_arbiter.vhd" sub00/vhpl02 1267976584
+AR vga640x480 behavioral "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/wb_vga640x480.vhd" sub00/vhpl11 1267976593
+AR gameoflife behavioral "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/GameOfLife.vhd" sub00/vhpl13 1267976595
+AR sramctl behavioral "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/sramctl.vhd" sub00/vhpl09 1267976591
+EN wb_intercon NULL "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/wb_intercon.vhd" sub00/vhpl04 1267976586

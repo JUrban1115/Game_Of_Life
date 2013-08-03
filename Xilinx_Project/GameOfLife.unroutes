@@ -1,0 +1,17 @@
+Release 10.1.03 - par K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Tue Dec 16 21:39:35 2008
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 5 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   ps2_clk_IBUF
+   ps2_data_IBUF
+   swts_i<1>_IBUF
+   swts_i<2>_IBUF
+   swts_i<3>_IBUF
+
+

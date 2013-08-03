@@ -1,0 +1,85 @@
+#:C29    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 K.39
+#Current Working Directory:
+#:D   C:\Users\Jeff\Documents\Classes\Previous Semesters\ECE 4401 Digital Design Lab\Projects\JUrbanGameOfLife\GameOfLife
+#Date/Time:
+#:T   Tue Dec 16 21:39:53 2008
+#------------------------------
+	#Reading C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/GameOfLife.ncd...
+	#Loading device for application Rf_Device from file '3s200.nph' in environment C:\Xilinx\10.1\ISE.
+	#   "GameOfLife" is an NCD, version 3.2, device xc3s200, package ft256, speed -4
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+unselect -all
+	#3
+select -k comp 'wbgm/neighborsB_8_3'
+	#4
+unselect -all
+	#5
+unselect -all
+	#6
+unselect -all
+	#7
+unselect -all
+	#8
+select -k comp 'wbgm/neighborsB_39_1'
+	#9
+unselect -all
+	#10
+unselect -all
+	#11
+select net 'btn2_IBUF'
+	#net "btn2_IBUF"
+	#12
+setattr layer pinwires view toggle
+	#13
+setattr layer pinwires view toggle
+	#14
+setattr layer pinwires view toggle
+	#15
+setattr layer pinwires view toggle
+	#16
+setattr layer pinwires view toggle
+	#17
+setattr layer sites view toggle
+	#18
+setattr layer sites view toggle
+	#19
+post cmd
+	#20
+setattr main disable_draw on
+	#21
+setattr layer hard_macros view off
+	#22
+setattr main disable_draw off
+	#Hint: change the visibility of more than one layer at a time by clicking on the apply button, clicking two or more layer buttons, and then clicking on the apply button again.
+	#23
+setattr main disable_draw on
+	#24
+setattr layer hard_macros view on
+	#25
+setattr main disable_draw off
+	#26
+setattr main disable_draw on
+	#27
+setattr layer user_rpms view off
+	#28
+setattr main disable_draw off
+	#29
+setattr main disable_draw on
+	#30
+setattr layer tool_rpms view off
+	#31
+setattr main disable_draw off
+	#32
+setattr main disable_draw on
+	#33
+setattr layer hard_macros view off
+	#34
+setattr main disable_draw off
+	#Hint: click on the apply button to make this change take affect.

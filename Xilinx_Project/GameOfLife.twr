@@ -1,0 +1,340 @@
+--------------------------------------------------------------------------------
+Release 10.1.03 Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\trce.exe -ise
+C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/GameOfLife.ise
+-intstyle ise -v 3 -s 4 -xml GameOfLife GameOfLife.ncd -o GameOfLife.twr
+GameOfLife.pcf -ucf system.ucf
+
+Design file:              GameOfLife.ncd
+Physical constraint file: GameOfLife.pcf
+Device,package,speed:     xc3s200,ft256,-4 (PRODUCTION 1.39 2008-01-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_sys_clk = PERIOD TIMEGRP "sys_clk" 20 ns HIGH 50%;
+
+ 225937 paths analyzed, 6660 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is  15.763ns.
+--------------------------------------------------------------------------------
+Slack:                  4.237ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               wbgm/dCol_6 (FF)
+  Destination:          wbgm/cache2G_60 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      15.761ns (Levels of Logic = 16)
+  Clock Path Skew:      -0.002ns (0.436 - 0.438)
+  Source Clock:         sys_clk_BUFGP rising at 0.000ns
+  Destination Clock:    sys_clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: wbgm/dCol_6 to wbgm/cache2G_60
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y26.YQ      Tcko                  0.720   wbgm/dCol<5>
+                                                       wbgm/dCol_6
+    SLICE_X18Y26.G2      net (fanout=4)        1.039   wbgm/dCol<6>
+    SLICE_X18Y26.COUT    Topcyg                1.096   wbgm/cache2G_sub0000<5>
+                                                       wbgm/Madd_cache2G_not0000<6>1_INV_0
+                                                       wbgm/Madd_cache2G_sub0000_cy<6>
+    SLICE_X18Y27.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<6>
+    SLICE_X18Y27.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<7>
+                                                       wbgm/Madd_cache2G_sub0000_cy<7>
+                                                       wbgm/Madd_cache2G_sub0000_cy<8>
+    SLICE_X18Y28.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<8>
+    SLICE_X18Y28.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<9>
+                                                       wbgm/Madd_cache2G_sub0000_cy<9>
+                                                       wbgm/Madd_cache2G_sub0000_cy<10>
+    SLICE_X18Y29.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<10>
+    SLICE_X18Y29.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<11>
+                                                       wbgm/Madd_cache2G_sub0000_cy<11>
+                                                       wbgm/Madd_cache2G_sub0000_cy<12>
+    SLICE_X18Y30.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<12>
+    SLICE_X18Y30.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<13>
+                                                       wbgm/Madd_cache2G_sub0000_cy<13>
+                                                       wbgm/Madd_cache2G_sub0000_cy<14>
+    SLICE_X18Y31.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<14>
+    SLICE_X18Y31.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<15>
+                                                       wbgm/Madd_cache2G_sub0000_cy<15>
+                                                       wbgm/Madd_cache2G_sub0000_cy<16>
+    SLICE_X18Y32.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<16>
+    SLICE_X18Y32.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<17>
+                                                       wbgm/Madd_cache2G_sub0000_cy<17>
+                                                       wbgm/Madd_cache2G_sub0000_cy<18>
+    SLICE_X18Y33.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<18>
+    SLICE_X18Y33.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<19>
+                                                       wbgm/Madd_cache2G_sub0000_cy<19>
+                                                       wbgm/Madd_cache2G_sub0000_cy<20>
+    SLICE_X18Y34.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<20>
+    SLICE_X18Y34.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<21>
+                                                       wbgm/Madd_cache2G_sub0000_cy<21>
+                                                       wbgm/Madd_cache2G_sub0000_cy<22>
+    SLICE_X18Y35.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<22>
+    SLICE_X18Y35.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<23>
+                                                       wbgm/Madd_cache2G_sub0000_cy<23>
+                                                       wbgm/Madd_cache2G_sub0000_cy<24>
+    SLICE_X18Y36.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<24>
+    SLICE_X18Y36.X       Tcinx                 0.904   wbgm/cache2G_sub0000<25>
+                                                       wbgm/Madd_cache2G_sub0000_xor<25>
+    SLICE_X19Y27.G4      net (fanout=2)        2.157   wbgm/cache2G_sub0000<25>
+    SLICE_X19Y27.COUT    Topcyg                1.039   wbgm/cache2B_81_cmp_eq00001_wg_cy<3>
+                                                       wbgm/cache2B_81_cmp_eq00001_wg_lut<3>
+                                                       wbgm/cache2B_81_cmp_eq00001_wg_cy<3>
+    SLICE_X19Y28.CIN     net (fanout=1)        0.000   wbgm/cache2B_81_cmp_eq00001_wg_cy<3>
+    SLICE_X19Y28.COUT    Tbyp                  0.128   wbgm/cache2B_81_cmp_eq00001_wg_cy<5>
+                                                       wbgm/cache2B_81_cmp_eq00001_wg_cy<4>
+                                                       wbgm/cache2B_81_cmp_eq00001_wg_cy<5>
+    SLICE_X19Y29.CIN     net (fanout=1)        0.000   wbgm/cache2B_81_cmp_eq00001_wg_cy<5>
+    SLICE_X19Y29.XB      Tcinxb                0.320   wbgm/cache2B<7>
+                                                       wbgm/cache2B_81_cmp_eq00001_wg_cy<6>
+    SLICE_X22Y33.F4      net (fanout=21)       1.567   wbgm/cache2B_81_cmp_eq00001_wg_cy<6>
+    SLICE_X22Y33.X       Tilo                  0.608   wbgm/N61
+                                                       wbgm/cache2B_57_mux000021
+    SLICE_X31Y39.G4      net (fanout=16)       4.470   wbgm/N61
+    SLICE_X31Y39.CLK     Tgck                  0.633   wbgm/cache2B<60>
+                                                       wbgm/cache2G_60_mux00001
+                                                       wbgm/cache2G_60
+    -------------------------------------------------  ---------------------------
+    Total                                     15.761ns (6.528ns logic, 9.233ns route)
+                                                       (41.4% logic, 58.6% route)
+
+--------------------------------------------------------------------------------
+Slack:                  4.349ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               wbgm/dCol_2 (FF)
+  Destination:          wbgm/cache2G_60 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      15.649ns (Levels of Logic = 18)
+  Clock Path Skew:      -0.002ns (0.436 - 0.438)
+  Source Clock:         sys_clk_BUFGP rising at 0.000ns
+  Destination Clock:    sys_clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: wbgm/dCol_2 to wbgm/cache2G_60
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y24.YQ      Tcko                  0.720   wbgm/dCol<1>
+                                                       wbgm/dCol_2
+    SLICE_X18Y24.G2      net (fanout=4)        0.687   wbgm/dCol<2>
+    SLICE_X18Y24.COUT    Topcyg                1.096   wbgm/cache2G_sub0000<1>
+                                                       wbgm/Madd_cache2G_not0000<2>1_INV_0
+                                                       wbgm/Madd_cache2G_sub0000_cy<2>
+    SLICE_X18Y25.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<2>
+    SLICE_X18Y25.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<3>
+                                                       wbgm/Madd_cache2G_sub0000_cy<3>
+                                                       wbgm/Madd_cache2G_sub0000_cy<4>
+    SLICE_X18Y26.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<4>
+    SLICE_X18Y26.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<5>
+                                                       wbgm/Madd_cache2G_sub0000_cy<5>
+                                                       wbgm/Madd_cache2G_sub0000_cy<6>
+    SLICE_X18Y27.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<6>
+    SLICE_X18Y27.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<7>
+                                                       wbgm/Madd_cache2G_sub0000_cy<7>
+                                                       wbgm/Madd_cache2G_sub0000_cy<8>
+    SLICE_X18Y28.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<8>
+    SLICE_X18Y28.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<9>
+                                                       wbgm/Madd_cache2G_sub0000_cy<9>
+                                                       wbgm/Madd_cache2G_sub0000_cy<10>
+    SLICE_X18Y29.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<10>
+    SLICE_X18Y29.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<11>
+                                                       wbgm/Madd_cache2G_sub0000_cy<11>
+                                                       wbgm/Madd_cache2G_sub0000_cy<12>
+    SLICE_X18Y30.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<12>
+    SLICE_X18Y30.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<13>
+                                                       wbgm/Madd_cache2G_sub0000_cy<13>
+                                                       wbgm/Madd_cache2G_sub0000_cy<14>
+    SLICE_X18Y31.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<14>
+    SLICE_X18Y31.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<15>
+                                                       wbgm/Madd_cache2G_sub0000_cy<15>
+                                                       wbgm/Madd_cache2G_sub0000_cy<16>
+    SLICE_X18Y32.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<16>
+    SLICE_X18Y32.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<17>
+                                                       wbgm/Madd_cache2G_sub0000_cy<17>
+                                                       wbgm/Madd_cache2G_sub0000_cy<18>
+    SLICE_X18Y33.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<18>
+    SLICE_X18Y33.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<19>
+                                                       wbgm/Madd_cache2G_sub0000_cy<19>
+                                                       wbgm/Madd_cache2G_sub0000_cy<20>
+    SLICE_X18Y34.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<20>
+    SLICE_X18Y34.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<21>
+                                                       wbgm/Madd_cache2G_sub0000_cy<21>
+                                                       wbgm/Madd_cache2G_sub0000_cy<22>
+    SLICE_X18Y35.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<22>
+    SLICE_X18Y35.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<23>
+                                                       wbgm/Madd_cache2G_sub0000_cy<23>
+                                                       wbgm/Madd_cache2G_sub0000_cy<24>
+    SLICE_X18Y36.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<24>
+    SLICE_X18Y36.X       Tcinx                 0.904   wbgm/cache2G_sub0000<25>
+                                                       wbgm/Madd_cache2G_sub0000_xor<25>
+    SLICE_X19Y27.G4      net (fanout=2)        2.157   wbgm/cache2G_sub0000<25>
+    SLICE_X19Y27.COUT    Topcyg                1.039   wbgm/cache2B_81_cmp_eq00001_wg_cy<3>
+                                                       wbgm/cache2B_81_cmp_eq00001_wg_lut<3>
+                                                       wbgm/cache2B_81_cmp_eq00001_wg_cy<3>
+    SLICE_X19Y28.CIN     net (fanout=1)        0.000   wbgm/cache2B_81_cmp_eq00001_wg_cy<3>
+    SLICE_X19Y28.COUT    Tbyp                  0.128   wbgm/cache2B_81_cmp_eq00001_wg_cy<5>
+                                                       wbgm/cache2B_81_cmp_eq00001_wg_cy<4>
+                                                       wbgm/cache2B_81_cmp_eq00001_wg_cy<5>
+    SLICE_X19Y29.CIN     net (fanout=1)        0.000   wbgm/cache2B_81_cmp_eq00001_wg_cy<5>
+    SLICE_X19Y29.XB      Tcinxb                0.320   wbgm/cache2B<7>
+                                                       wbgm/cache2B_81_cmp_eq00001_wg_cy<6>
+    SLICE_X22Y33.F4      net (fanout=21)       1.567   wbgm/cache2B_81_cmp_eq00001_wg_cy<6>
+    SLICE_X22Y33.X       Tilo                  0.608   wbgm/N61
+                                                       wbgm/cache2B_57_mux000021
+    SLICE_X31Y39.G4      net (fanout=16)       4.470   wbgm/N61
+    SLICE_X31Y39.CLK     Tgck                  0.633   wbgm/cache2B<60>
+                                                       wbgm/cache2G_60_mux00001
+                                                       wbgm/cache2G_60
+    -------------------------------------------------  ---------------------------
+    Total                                     15.649ns (6.768ns logic, 8.881ns route)
+                                                       (43.2% logic, 56.8% route)
+
+--------------------------------------------------------------------------------
+Slack:                  4.396ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               wbgm/dCol_1 (FF)
+  Destination:          wbgm/cache2G_60 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      15.602ns (Levels of Logic = 18)
+  Clock Path Skew:      -0.002ns (0.436 - 0.438)
+  Source Clock:         sys_clk_BUFGP rising at 0.000ns
+  Destination Clock:    sys_clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: wbgm/dCol_1 to wbgm/cache2G_60
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y24.XQ      Tcko                  0.720   wbgm/dCol<1>
+                                                       wbgm/dCol_1
+    SLICE_X18Y24.F1      net (fanout=4)        0.652   wbgm/dCol<1>
+    SLICE_X18Y24.COUT    Topcyf                1.084   wbgm/cache2G_sub0000<1>
+                                                       wbgm/dCol<1>_rt
+                                                       wbgm/Madd_cache2G_sub0000_cy<1>
+                                                       wbgm/Madd_cache2G_sub0000_cy<2>
+    SLICE_X18Y25.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<2>
+    SLICE_X18Y25.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<3>
+                                                       wbgm/Madd_cache2G_sub0000_cy<3>
+                                                       wbgm/Madd_cache2G_sub0000_cy<4>
+    SLICE_X18Y26.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<4>
+    SLICE_X18Y26.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<5>
+                                                       wbgm/Madd_cache2G_sub0000_cy<5>
+                                                       wbgm/Madd_cache2G_sub0000_cy<6>
+    SLICE_X18Y27.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<6>
+    SLICE_X18Y27.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<7>
+                                                       wbgm/Madd_cache2G_sub0000_cy<7>
+                                                       wbgm/Madd_cache2G_sub0000_cy<8>
+    SLICE_X18Y28.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<8>
+    SLICE_X18Y28.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<9>
+                                                       wbgm/Madd_cache2G_sub0000_cy<9>
+                                                       wbgm/Madd_cache2G_sub0000_cy<10>
+    SLICE_X18Y29.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<10>
+    SLICE_X18Y29.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<11>
+                                                       wbgm/Madd_cache2G_sub0000_cy<11>
+                                                       wbgm/Madd_cache2G_sub0000_cy<12>
+    SLICE_X18Y30.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<12>
+    SLICE_X18Y30.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<13>
+                                                       wbgm/Madd_cache2G_sub0000_cy<13>
+                                                       wbgm/Madd_cache2G_sub0000_cy<14>
+    SLICE_X18Y31.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<14>
+    SLICE_X18Y31.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<15>
+                                                       wbgm/Madd_cache2G_sub0000_cy<15>
+                                                       wbgm/Madd_cache2G_sub0000_cy<16>
+    SLICE_X18Y32.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<16>
+    SLICE_X18Y32.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<17>
+                                                       wbgm/Madd_cache2G_sub0000_cy<17>
+                                                       wbgm/Madd_cache2G_sub0000_cy<18>
+    SLICE_X18Y33.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<18>
+    SLICE_X18Y33.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<19>
+                                                       wbgm/Madd_cache2G_sub0000_cy<19>
+                                                       wbgm/Madd_cache2G_sub0000_cy<20>
+    SLICE_X18Y34.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<20>
+    SLICE_X18Y34.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<21>
+                                                       wbgm/Madd_cache2G_sub0000_cy<21>
+                                                       wbgm/Madd_cache2G_sub0000_cy<22>
+    SLICE_X18Y35.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<22>
+    SLICE_X18Y35.COUT    Tbyp                  0.120   wbgm/cache2G_sub0000<23>
+                                                       wbgm/Madd_cache2G_sub0000_cy<23>
+                                                       wbgm/Madd_cache2G_sub0000_cy<24>
+    SLICE_X18Y36.CIN     net (fanout=1)        0.000   wbgm/Madd_cache2G_sub0000_cy<24>
+    SLICE_X18Y36.X       Tcinx                 0.904   wbgm/cache2G_sub0000<25>
+                                                       wbgm/Madd_cache2G_sub0000_xor<25>
+    SLICE_X19Y27.G4      net (fanout=2)        2.157   wbgm/cache2G_sub0000<25>
+    SLICE_X19Y27.COUT    Topcyg                1.039   wbgm/cache2B_81_cmp_eq00001_wg_cy<3>
+                                                       wbgm/cache2B_81_cmp_eq00001_wg_lut<3>
+                                                       wbgm/cache2B_81_cmp_eq00001_wg_cy<3>
+    SLICE_X19Y28.CIN     net (fanout=1)        0.000   wbgm/cache2B_81_cmp_eq00001_wg_cy<3>
+    SLICE_X19Y28.COUT    Tbyp                  0.128   wbgm/cache2B_81_cmp_eq00001_wg_cy<5>
+                                                       wbgm/cache2B_81_cmp_eq00001_wg_cy<4>
+                                                       wbgm/cache2B_81_cmp_eq00001_wg_cy<5>
+    SLICE_X19Y29.CIN     net (fanout=1)        0.000   wbgm/cache2B_81_cmp_eq00001_wg_cy<5>
+    SLICE_X19Y29.XB      Tcinxb                0.320   wbgm/cache2B<7>
+                                                       wbgm/cache2B_81_cmp_eq00001_wg_cy<6>
+    SLICE_X22Y33.F4      net (fanout=21)       1.567   wbgm/cache2B_81_cmp_eq00001_wg_cy<6>
+    SLICE_X22Y33.X       Tilo                  0.608   wbgm/N61
+                                                       wbgm/cache2B_57_mux000021
+    SLICE_X31Y39.G4      net (fanout=16)       4.470   wbgm/N61
+    SLICE_X31Y39.CLK     Tgck                  0.633   wbgm/cache2B<60>
+                                                       wbgm/cache2G_60_mux00001
+                                                       wbgm/cache2G_60
+    -------------------------------------------------  ---------------------------
+    Total                                     15.602ns (6.756ns logic, 8.846ns route)
+                                                       (43.3% logic, 56.7% route)
+
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock sys_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sys_clk        |   15.763|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover 225937 paths, 0 nets, and 13811 connections
+
+Design statistics:
+   Minimum period:  15.763ns{1}   (Maximum frequency:  63.440MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Tue Dec 16 21:39:47 2008 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 152 MB
+
+
+

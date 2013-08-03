@@ -1,0 +1,33 @@
+Release 10.1.03 - xst K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Jeff/Documents/Classes/Digital Design/Projects/GameOfLife/wb_reader.vhd" in Library work.
+Entity <wb_reader> compiled.
+ERROR:HDLParsers:3292 - "C:/Users/Jeff/Documents/Classes/Digital Design/Projects/GameOfLife/wb_reader.vhd" Line 110. + has two or more possible definitions in this scope.  For example, parameter 1 (result of operator) can be: std_logic_vector, SIGNED, or UNSIGNED
+ERROR:HDLParsers:808 - "C:/Users/Jeff/Documents/Classes/Digital Design/Projects/GameOfLife/wb_reader.vhd" Line 125. = can not have such operands in this context.
+ERROR:HDLParsers:800 - "C:/Users/Jeff/Documents/Classes/Digital Design/Projects/GameOfLife/wb_reader.vhd" Line 127. Type of nxtGrid is incompatible with type of 1.
+ERROR:HDLParsers:800 - "C:/Users/Jeff/Documents/Classes/Digital Design/Projects/GameOfLife/wb_reader.vhd" Line 129. Type of nxtGrid is incompatible with type of 0.
+ERROR:HDLParsers:800 - "C:/Users/Jeff/Documents/Classes/Digital Design/Projects/GameOfLife/wb_reader.vhd" Line 133. Type of nxtGrid is incompatible with type of 1.
+ERROR:HDLParsers:800 - "C:/Users/Jeff/Documents/Classes/Digital Design/Projects/GameOfLife/wb_reader.vhd" Line 135. Type of nxtGrid is incompatible with type of 0.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.30 secs
+ 
+--> 
+
+Total memory usage is 145168 kilobytes
+
+Number of errors   :    6 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

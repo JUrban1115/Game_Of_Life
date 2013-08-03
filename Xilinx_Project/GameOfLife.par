@@ -1,0 +1,137 @@
+Release 10.1.03 par K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+JEFF-PC::  Tue Dec 16 21:39:01 2008
+
+par -w -intstyle ise -ol std -t 1 GameOfLife_map.ncd GameOfLife.ncd
+GameOfLife.pcf 
+
+
+Constraints file: GameOfLife.pcf.
+Loading device for application Rf_Device from file '3s200.nph' in environment C:\Xilinx\10.1\ISE.
+   "GameOfLife" is an NCD, version 3.2, device xc3s200, package ft256, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.39 2008-01-09".
+
+
+
+Device Utilization Summary:
+
+   Number of BUFGMUXs                        2 out of 8      25%
+   Number of External IOBs                  97 out of 173    56%
+      Number of LOCed IOBs                  97 out of 97    100%
+
+   Number of MULT18X18s                      1 out of 12      8%
+   Number of RAMB16s                        12 out of 12    100%
+   Number of Slices                       1863 out of 1920   97%
+      Number of SLICEMs                      0 out of 960     0%
+
+
+
+Overall effort level (-ol):   Standard 
+Router effort level (-rl):    Standard 
+
+Starting initial Timing Analysis.  REAL time: 7 secs 
+Finished initial Timing Analysis.  REAL time: 7 secs 
+
+WARNING:Par:288 - The signal ps2_clk_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ps2_data_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal swts_i<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal swts_i<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal swts_i<3>_IBUF has no load.  PAR will not attempt to route this signal.
+Starting Router
+
+Phase 1: 16120 unrouted;       REAL time: 8 secs 
+
+Phase 2: 14703 unrouted;       REAL time: 8 secs 
+
+Phase 3: 7554 unrouted;       REAL time: 12 secs 
+
+Phase 4: 7554 unrouted; (0)      REAL time: 12 secs 
+
+Phase 5: 7554 unrouted; (0)      REAL time: 12 secs 
+
+Phase 6: 7554 unrouted; (0)      REAL time: 12 secs 
+
+Phase 7: 0 unrouted; (0)      REAL time: 25 secs 
+
+Phase 8: 0 unrouted; (0)      REAL time: 27 secs 
+
+Phase 9: 0 unrouted; (0)      REAL time: 29 secs 
+
+
+Total REAL time to Router completion: 31 secs 
+Total CPU time to Router completion: 29 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|       sys_clk_BUFGP |      BUFGMUX0| No   | 1302 |  0.006     |  1.016      |
++---------------------+--------------+------+------+------------+-------------+
+|wbvga/clk_divider/cl |              |      |      |            |             |
+|                   k |      BUFGMUX7| No   |   12 |  0.001     |  1.011      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+Timing Score: 0
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+------------------------------------------------------------------------------------------------------
+  Constraint                                |  Check  | Worst Case |  Best Case | Timing |   Timing   
+                                            |         |    Slack   | Achievable | Errors |    Score   
+------------------------------------------------------------------------------------------------------
+  TS_sys_clk = PERIOD TIMEGRP "sys_clk" 20  | SETUP   |     4.237ns|    15.763ns|       0|           0
+  ns HIGH 50%                               | HOLD    |     0.884ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 5 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 34 secs 
+Total CPU time to PAR completion: 32 secs 
+
+Peak Memory Usage:  186 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 7
+Number of info messages: 0
+
+Writing design to file GameOfLife.ncd
+
+
+
+PAR done!

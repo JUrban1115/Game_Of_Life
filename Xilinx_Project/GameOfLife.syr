@@ -1,0 +1,1638 @@
+Release 11.1 - xst L.33 (nt)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.22 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.22 secs
+ 
+--> Reading design: GameOfLife.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "GameOfLife.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "GameOfLife"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : GameOfLife
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Area
+Optimization Effort                : 2
+Library Search Order               : GameOfLife.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/clock_divider.vhd" in Library work.
+Entity <clock_divider> compiled.
+Entity <clock_divider> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/wb_arbiter.vhd" in Library work.
+Entity <wb_arbiter> compiled.
+Entity <wb_arbiter> (Architecture <ARB0001a1>) compiled.
+Compiling vhdl file "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/wb_intercon.vhd" in Library work.
+Entity <wb_intercon> compiled.
+Entity <wb_intercon> (Architecture <ICN0002a1>) compiled.
+Compiling vhdl file "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/wb_game.vhd" in Library work.
+Entity <wb_game> compiled.
+Entity <wb_game> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/sramctl.vhd" in Library work.
+Entity <sramctl> compiled.
+Entity <sramctl> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/wb_vga640x480.vhd" in Library work.
+Entity <vga640x480> compiled.
+Entity <vga640x480> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/GameOfLife.vhd" in Library work.
+Entity <GameOfLife> compiled.
+Entity <GameOfLife> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <GameOfLife> in library <work> (architecture <Behavioral>) with generics.
+	addFill = "000000000000000000000000000000"
+	noAddr = "00000000000000000000000000000000"
+
+Analyzing hierarchy for entity <wb_intercon> in library <work> (architecture <ICN0002a1>) with generics.
+	num_addr_bits = 32
+	num_data_bits = 32
+
+Analyzing hierarchy for entity <wb_game> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <sramctl> in library <work> (architecture <Behavioral>) with generics.
+	num_read_waits = 3
+	num_write_waits = 1
+
+Analyzing hierarchy for entity <vga640x480> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <wb_arbiter> in library <work> (architecture <ARB0001a1>).
+
+Analyzing hierarchy for entity <clock_divider> in library <work> (architecture <Behavioral>) with generics.
+	divisor = 2
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <GameOfLife> in library <work> (Architecture <Behavioral>).
+	addFill = "000000000000000000000000000000"
+	noAddr = "00000000000000000000000000000000"
+Entity <GameOfLife> analyzed. Unit <GameOfLife> generated.
+
+Analyzing generic Entity <wb_intercon> in library <work> (Architecture <ICN0002a1>).
+	num_addr_bits = 32
+	num_data_bits = 32
+Entity <wb_intercon> analyzed. Unit <wb_intercon> generated.
+
+Analyzing Entity <wb_arbiter> in library <work> (Architecture <ARB0001a1>).
+Entity <wb_arbiter> analyzed. Unit <wb_arbiter> generated.
+
+Analyzing Entity <wb_game> in library <work> (Architecture <Behavioral>).
+INFO:Xst:2679 - Register <keyUp> in unit <wb_game> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dat_o<31>> in unit <wb_game> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dat_o<30>> in unit <wb_game> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dat_o<27>> in unit <wb_game> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dat_o<26>> in unit <wb_game> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dat_o<23>> in unit <wb_game> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dat_o<22>> in unit <wb_game> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dat_o<19>> in unit <wb_game> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dat_o<18>> in unit <wb_game> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dat_o<15>> in unit <wb_game> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dat_o<14>> in unit <wb_game> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dat_o<11>> in unit <wb_game> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dat_o<10>> in unit <wb_game> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dat_o<7>> in unit <wb_game> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dat_o<6>> in unit <wb_game> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dat_o<3>> in unit <wb_game> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dat_o<2>> in unit <wb_game> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <wb_game> analyzed. Unit <wb_game> generated.
+
+Analyzing generic Entity <sramctl> in library <work> (Architecture <Behavioral>).
+	num_read_waits = 3
+	num_write_waits = 1
+Entity <sramctl> analyzed. Unit <sramctl> generated.
+
+Analyzing Entity <vga640x480> in library <work> (Architecture <Behavioral>).
+    Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_0C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_10 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_11 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_12 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_13 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_14 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_15 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_16 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_17 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_18 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_19 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_1A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_1B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_1C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_1D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_1E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_1F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_20 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_21 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_22 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_23 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_24 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_25 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_26 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_27 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_28 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_29 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_2A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_2B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_2C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_2D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_2E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_2F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_30 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_31 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_32 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_33 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_34 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_35 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_36 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_37 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_38 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_39 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_3A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_3B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_3C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_3D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_3E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_3F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_A =  000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "INIT_B =  000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "SIM_COLLISION_CHECK =  ALL" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "SRVAL_A =  000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "SRVAL_B =  000000000" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <gen1.gen2.bram> in unit <vga640x480>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <gen1.gen2.bram> in unit <vga640x480>.
+Entity <vga640x480> analyzed. Unit <vga640x480> generated.
+
+Analyzing generic Entity <clock_divider> in library <work> (Architecture <Behavioral>).
+	divisor = 2
+Entity <clock_divider> analyzed. Unit <clock_divider> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <wb_game>.
+    Related source file is "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/wb_game.vhd".
+WARNING:Xst:647 - Input <swts_i<3:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <irq_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <irqv_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <scanIn> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <nextG<81>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <nextG<0>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <nextB<81>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <nextB<0>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <keyUp> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <dataReg<31>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <dataReg<27>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <dataReg<23>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <dataReg<19>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <dataReg<15>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <dataReg<11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <dataReg<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <dataReg<3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <asciiV> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <adr_oTemp> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 27                                             |
+    | Transitions        | 42                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 29                                             |
+    | Clock              | clk_i (rising_edge)                            |
+    | Reset              | state$or0000 (positive)                        |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | reset                                          |
+    | Power Up State     | reset                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 2-bit register for signal <dat_o<29:28>>.
+    Found 2-bit register for signal <dat_o<25:24>>.
+    Found 2-bit register for signal <dat_o<21:20>>.
+    Found 2-bit register for signal <dat_o<17:16>>.
+    Found 2-bit register for signal <dat_o<13:12>>.
+    Found 2-bit register for signal <dat_o<9:8>>.
+    Found 2-bit register for signal <dat_o<5:4>>.
+    Found 2-bit register for signal <dat_o<1:0>>.
+    Found 18-bit register for signal <addr>.
+    Found 18-bit adder for signal <addr$share0000> created at line 91.
+    Found 32-bit register for signal <adr_oI>.
+    Found 82-bit register for signal <cache0>.
+    Found 82-bit register for signal <cache0B>.
+    Found 82-bit register for signal <cache0G>.
+    Found 82-bit register for signal <cache1>.
+    Found 82-bit register for signal <cache1B>.
+    Found 82-bit register for signal <cache1G>.
+    Found 82-bit register for signal <cache2>.
+    Found 82-bit register for signal <cache2B>.
+    Found 82-bit register for signal <cache2G>.
+    Found 29-bit adder for signal <cache2G$sub0000> created at line 200.
+    Found 32-bit up counter for signal <cnt>.
+    Found 32-bit register for signal <dataReg>.
+    Found 32-bit register for signal <dCol>.
+    Found 32-bit adder for signal <dCol$share0000> created at line 91.
+    Found 32-bit register for signal <dRow>.
+    Found 32-bit adder for signal <dRow$share0000> created at line 91.
+    Found 1-bit register for signal <genClk>.
+    Found 4-bit adder for signal <neighbors>.
+    Found 2-bit adder for signal <neighbors_1$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_1$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_1$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_1$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_10$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_10$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_10$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_10$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_11$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_11$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_11$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_11$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_12$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_12$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_12$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_12$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_13$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_13$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_13$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_13$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_14$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_14$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_14$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_14$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_15$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_15$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_15$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_15$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_16$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_16$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_16$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_16$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_17$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_17$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_17$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_17$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_18$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_18$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_18$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_18$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_19$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_19$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_19$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_19$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_2$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_2$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_2$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_2$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_20$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_20$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_20$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_20$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_21$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_21$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_21$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_21$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_22$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_22$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_22$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_22$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_23$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_23$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_23$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_23$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_24$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_24$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_24$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_24$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_25$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_25$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_25$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_25$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_26$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_26$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_26$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_26$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_27$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_27$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_27$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_27$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_28$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_28$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_28$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_28$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_29$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_29$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_29$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_29$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_3$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_3$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_3$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_3$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_30$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_30$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_30$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_30$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_31$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_31$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_31$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_31$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_32$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_32$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_32$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_32$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_33$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_33$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_33$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_33$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_34$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_34$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_34$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_34$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_35$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_35$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_35$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_35$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_36$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_36$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_36$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_36$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_37$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_37$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_37$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_37$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_38$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_38$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_38$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_38$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_39$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_39$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_39$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_39$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_4$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_4$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_4$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_4$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_40$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_40$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_40$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_40$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_41$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_41$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_41$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_41$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_42$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_42$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_42$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_42$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_43$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_43$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_43$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_43$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_44$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_44$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_44$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_44$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_45$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_45$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_45$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_45$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_46$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_46$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_46$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_46$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_47$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_47$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_47$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_47$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_48$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_48$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_48$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_48$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_49$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_49$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_49$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_49$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_5$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_5$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_5$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_5$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_50$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_50$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_50$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_50$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_51$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_51$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_51$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_51$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_52$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_52$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_52$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_52$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_53$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_53$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_53$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_53$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_54$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_54$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_54$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_54$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_55$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_55$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_55$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_55$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_56$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_56$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_56$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_56$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_57$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_57$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_57$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_57$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_58$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_58$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_58$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_58$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_59$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_59$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_59$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_59$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_6$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_6$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_6$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_6$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_60$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_60$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_60$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_60$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_61$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_61$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_61$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_61$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_62$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_62$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_62$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_62$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_63$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_63$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_63$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_63$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_64$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_64$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_64$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_64$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_65$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_65$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_65$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_65$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_66$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_66$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_66$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_66$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_67$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_67$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_67$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_67$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_68$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_68$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_68$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_68$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_69$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_69$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_69$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_69$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_7$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_7$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_7$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_7$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_70$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_70$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_70$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_70$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_71$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_71$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_71$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_71$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_72$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_72$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_72$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_72$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_73$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_73$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_73$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_73$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_74$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_74$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_74$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_74$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_75$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_75$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_75$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_75$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_76$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_76$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_76$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_76$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_77$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_77$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_77$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_77$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_78$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_78$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_78$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_78$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_79$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_79$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_79$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_79$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_8$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_8$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_8$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_8$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_80$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_80$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_80$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_80$addsub0000> created at line 306.
+    Found 2-bit adder for signal <neighbors_9$add0000> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_9$add0001> created at line 306.
+    Found 2-bit adder for signal <neighbors_9$add0002> created at line 306.
+    Found 3-bit adder carry in for signal <neighbors_9$addsub0000> created at line 306.
+    Found 320-bit register for signal <neighborsB>.
+    Found 320-bit register for signal <neighborsG>.
+    Found 18-bit register for signal <nextaddr>.
+    Found 18-bit adder for signal <nextaddr$share0000> created at line 91.
+    Found 80-bit register for signal <nextB<80:1>>.
+    Found 4-bit comparator greater for signal <nextB_1$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_1$cmp_gt0001> created at line 248.
+    Found 4-bit adder for signal <nextB_10$add0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_10$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_10$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_11$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_11$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_12$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_12$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_13$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_13$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_14$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_14$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_15$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_15$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_16$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_16$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_17$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_17$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_18$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_18$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_19$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_19$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_2$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_2$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_20$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_20$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_21$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_21$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_22$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_22$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_23$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_23$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_24$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_24$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_25$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_25$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_26$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_26$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_27$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_27$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_28$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_28$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_29$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_29$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_3$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_3$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_30$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_30$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_31$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_31$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_32$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_32$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_33$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_33$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_34$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_34$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_35$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_35$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_36$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_36$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_37$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_37$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_38$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_38$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_39$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_39$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_4$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_4$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_40$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_40$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_41$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_41$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_42$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_42$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_43$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_43$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_44$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_44$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_45$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_45$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_46$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_46$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_47$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_47$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_48$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_48$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_49$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_49$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_5$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_5$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_50$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_50$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_51$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_51$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_52$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_52$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_53$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_53$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_54$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_54$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_55$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_55$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_56$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_56$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_57$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_57$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_58$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_58$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_59$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_59$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_6$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_6$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_60$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_60$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_61$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_61$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_62$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_62$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_63$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_63$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_64$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_64$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_65$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_65$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_66$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_66$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_67$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_67$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_68$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_68$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_69$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_69$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_7$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_7$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_70$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_70$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_71$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_71$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_72$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_72$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_73$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_73$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_74$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_74$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_75$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_75$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_76$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_76$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_77$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_77$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_78$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_78$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_79$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_79$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_8$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_8$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_80$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_80$cmp_gt0001> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_9$cmp_gt0000> created at line 248.
+    Found 4-bit comparator greater for signal <nextB_9$cmp_gt0001> created at line 248.
+    Found 80-bit register for signal <nextG<80:1>>.
+    Found 4-bit comparator equal for signal <nextG_1$cmp_eq0000> created at line 240.
+    Found 4-bit adder for signal <nextG_10$add0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_10$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_11$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_12$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_13$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_14$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_15$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_16$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_17$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_18$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_19$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_2$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_20$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_21$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_22$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_23$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_24$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_25$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_26$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_27$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_28$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_29$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_3$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_30$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_31$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_32$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_33$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_34$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_35$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_36$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_37$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_38$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_39$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_4$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_40$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_41$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_42$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_43$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_44$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_45$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_46$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_47$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_48$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_49$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_5$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_50$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_51$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_52$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_53$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_54$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_55$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_56$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_57$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_58$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_59$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_6$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_60$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_61$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_62$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_63$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_64$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_65$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_66$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_67$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_68$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_69$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_7$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_70$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_71$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_72$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_73$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_74$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_75$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_76$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_77$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_78$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_79$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_8$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_80$cmp_eq0000> created at line 240.
+    Found 4-bit comparator equal for signal <nextG_9$cmp_eq0000> created at line 240.
+    Found 18-bit up counter for signal <readaddr>.
+INFO:Xst:738 - HDL ADVISOR - 320 flip-flops were inferred for signal <neighborsB>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:738 - HDL ADVISOR - 320 flip-flops were inferred for signal <neighborsG>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 Counter(s).
+	inferred 1719 D-type flip-flop(s).
+	inferred 407 Adder/Subtractor(s).
+	inferred 240 Comparator(s).
+Unit <wb_game> synthesized.
+
+
+Synthesizing Unit <sramctl>.
+    Related source file is "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/sramctl.vhd".
+WARNING:Xst:647 - Input <adr_i<31:18>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit tristate buffer for signal <sram_io1>.
+    Found 16-bit tristate buffer for signal <sram_io2>.
+    Found 31-bit up counter for signal <waits>.
+    Found 31-bit comparator greatequal for signal <waits$cmp_ge0000> created at line 60.
+    Found 31-bit comparator greatequal for signal <waits$cmp_ge0001> created at line 60.
+    Found 31-bit comparator less for signal <waits$cmp_lt0000> created at line 59.
+    Found 31-bit comparator less for signal <waits$cmp_lt0001> created at line 59.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   4 Comparator(s).
+	inferred  32 Tristate(s).
+Unit <sramctl> synthesized.
+
+
+Synthesizing Unit <wb_arbiter>.
+    Related source file is "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/wb_arbiter.vhd".
+    Found 1-bit register for signal <EDGE>.
+    Found 1-bit register for signal <LASMAS>.
+    Found 1-bit register for signal <LGNT0>.
+    Found 1-bit register for signal <LGNT1>.
+    Found 1-bit register for signal <LGNT2>.
+    Found 1-bit register for signal <LGNT3>.
+    Found 1-bit register for signal <LMAS0>.
+    Found 1-bit register for signal <LMAS1>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <wb_arbiter> synthesized.
+
+
+Synthesizing Unit <clock_divider>.
+    Related source file is "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/clock_divider.vhd".
+    Found 1-bit register for signal <clk>.
+    Found 1-bit register for signal <vcount<0>>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <clock_divider> synthesized.
+
+
+Synthesizing Unit <wb_intercon>.
+    Related source file is "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/wb_intercon.vhd".
+    Found 32-bit 4-to-1 multiplexer for signal <DRD>.
+    Found 32-bit 4-to-1 multiplexer for signal <DWR>.
+    Found 1-bit 4-to-1 multiplexer for signal <WE>.
+    Found 32-bit 4-to-1 multiplexer for signal <ADR>.
+    Found 1-bit 4-to-1 multiplexer for signal <STB>.
+    Summary:
+	inferred  98 Multiplexer(s).
+Unit <wb_intercon> synthesized.
+
+
+Synthesizing Unit <vga640x480>.
+    Related source file is "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/wb_vga640x480.vhd".
+WARNING:Xst:647 - Input <dat_i<31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dat_i<27>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dat_i<23>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dat_i<19>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dat_i<15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dat_i<11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dat_i<7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dat_i<3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <dat_o> is never assigned. Tied to value 00000000000000000000000000000000.
+WARNING:Xst:1780 - Signal <rcount> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <pdata> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <line_buffer> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <bram_dob> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <bram_doa<31:24>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <bram_dipb> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:653 - Signal <bram_dipa> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:653 - Signal <bram_dia> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk_i (rising_edge)                            |
+    | Reset              | rst_i (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | wait4ack                                       |
+    | Power Up State     | wait4ack                                       |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:643 - "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/wb_vga640x480.vhd" line 256: The result of a 10x11-bit multiplication is partially used. Only the 20 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 32-bit adder for signal <adr_o>.
+    Found 20-bit adder for signal <adr_o$add0000>.
+    Found 20-bit adder for signal <adr_o$addsub0000>.
+    Found 10-bit subtractor for signal <adr_o$addsub0001> created at line 256.
+    Found 10x11-bit multiplier for signal <adr_o$mult0001> created at line 256.
+    Found 10-bit adder for signal <bram_addra$add0000> created at line 238.
+    Found 10-bit comparator less for signal <cyc_o$cmp_lt0000> created at line 259.
+    Found 10-bit comparator greatequal for signal <hdisplay_valid$cmp_ge0000> created at line 268.
+    Found 10-bit comparator lessequal for signal <hdisplay_valid$cmp_le0000> created at line 268.
+    Found 10-bit comparator greatequal for signal <hsync_internal$cmp_ge0000> created at line 274.
+    Found 10-bit comparator less for signal <hsync_internal$cmp_lt0000> created at line 274.
+    Found 10-bit up counter for signal <line_count>.
+    Found 10-bit subtractor for signal <offset>.
+    Found 3x2-bit multiplier for signal <pixel$mult0000> created at line 265.
+    Found 10-bit up counter for signal <pixel_count>.
+    Found 10-bit comparator greatequal for signal <vdisplay_valid$cmp_ge0000> created at line 267.
+    Found 10-bit comparator lessequal for signal <vdisplay_valid$cmp_le0000> created at line 267.
+    Found 10-bit comparator greatequal for signal <vsync$cmp_ge0000> created at line 290.
+    Found 10-bit comparator less for signal <vsync$cmp_lt0000> created at line 290.
+    Found 7-bit register for signal <word_count>.
+    Found 7-bit adder for signal <word_count$addsub0000> created at line 197.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 Counter(s).
+	inferred   7 D-type flip-flop(s).
+	inferred   7 Adder/Subtractor(s).
+	inferred   2 Multiplier(s).
+	inferred   9 Comparator(s).
+Unit <vga640x480> synthesized.
+
+
+Synthesizing Unit <GameOfLife>.
+    Related source file is "C:/Users/Jeff/Documents/Classes/Previous Semesters/ECE 4401 Digital Design Lab/Projects/JUrbanGameOfLife/GameOfLife/GameOfLife.vhd".
+WARNING:Xst:647 - Input <ps2_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ps2_data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <weM<3:2>> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+WARNING:Xst:646 - Signal <stbS<3:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <stbM<3:2>> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+WARNING:Xst:653 - Signal <irqS> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:1780 - Signal <dRdBus> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <cycT<3:2>> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+WARNING:Xst:653 - Signal <ackS<3:1>> is used but never assigned. This sourceless signal will be automatically connected to value 000.
+WARNING:Xst:646 - Signal <ackM<3:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <GameOfLife> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 2
+ 10x11-bit multiplier                                  : 1
+ 3x2-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 414
+ 10-bit adder                                          : 1
+ 10-bit subtractor                                     : 2
+ 18-bit adder                                          : 2
+ 2-bit adder                                           : 160
+ 20-bit adder                                          : 2
+ 29-bit adder                                          : 1
+ 3-bit adder carry in                                  : 160
+ 32-bit adder                                          : 3
+ 4-bit adder                                           : 82
+ 7-bit adder                                           : 1
+# Counters                                             : 5
+ 10-bit up counter                                     : 2
+ 18-bit up counter                                     : 1
+ 31-bit up counter                                     : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 525
+ 1-bit register                                        : 351
+ 18-bit register                                       : 2
+ 32-bit register                                       : 4
+ 4-bit register                                        : 160
+ 7-bit register                                        : 1
+ 82-bit register                                       : 7
+# Comparators                                          : 253
+ 10-bit comparator greatequal                          : 4
+ 10-bit comparator less                                : 3
+ 10-bit comparator lessequal                           : 2
+ 31-bit comparator greatequal                          : 2
+ 31-bit comparator less                                : 2
+ 4-bit comparator equal                                : 80
+ 4-bit comparator greater                              : 160
+# Multiplexers                                         : 5
+ 1-bit 4-to-1 multiplexer                              : 2
+ 32-bit 4-to-1 multiplexer                             : 3
+# Tristates                                            : 2
+ 16-bit tristate buffer                                : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Choose code 7 with characteristics nb_luts=3,nb_literals=9,nb_ffs=2,depth=1 ...
+Optimizing FSM <wbvga/state/FSM> on signal <state[1:2]> with user encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ wait4ack  | 00
+ extrawait | 01
+ wait4next | 10
+-----------------------
+Analyzing FSM <FSM_0> for best encoding.
+Choose code 1 with characteristics nb_luts=31,nb_literals=82,nb_ffs=27,depth=2 ...
+Optimizing FSM <wbgm/state/FSM> on signal <state[1:27]> with one-hot encoding.
+-----------------------------------------------
+ State          | Encoding
+-----------------------------------------------
+ reset          | 000000000000000000000000001
+ initclear      | 000000000000000000000000010
+ holdclear      | 000000000000000000000000100
+ incaddr        | 000000000000000000000001000
+ incraw         | 000000000000000000000010000
+ initread       | 000000000000000000000100000
+ holdread       | 000000000000000000001000000
+ releaseread    | 000000000000000000010000000
+ initwrite      | 000000000000000000100000000
+ holdwrite      | 000000000000000001000000000
+ incrw          | 000000000000000010000000000
+ waitgen        | 000000000000000100000000000
+ nextgen        | 000000000000001000000000000
+ clearcaches    | 000000000000010000000000000
+ loadline       | 000000000000100000000000000
+ holdline       | 000000000001000000000000000
+ releaseline    | 000000000010000000000000000
+ checkrow       | 000000000100000000000000000
+ calcneighborsg | 000000010000000000000000000
+ resneighborsg  | 000000100000000000000000000
+ calcneighborsb | 000001000000000000000000000
+ resneighborsb  | 000010000000000000000000000
+ calcgen        | 000100000000000000000000000
+ initnext       | 001000000000000000000000000
+ holdnext       | 010000000000000000000000000
+ incnext        | 100000000000000000000000000
+ rotcache       | 000000001000000000000000000
+-----------------------------------------------
+WARNING:Xst:1293 - FF/Latch <vcount_0> has a constant value of 0 in block <clk_divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <adr_oI_31> (without init value) has a constant value of 0 in block <wbgm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <adr_oI_30> (without init value) has a constant value of 0 in block <wbgm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <adr_oI_29> (without init value) has a constant value of 0 in block <wbgm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <adr_oI_28> (without init value) has a constant value of 0 in block <wbgm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <adr_oI_27> (without init value) has a constant value of 0 in block <wbgm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <adr_oI_26> (without init value) has a constant value of 0 in block <wbgm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <adr_oI_25> (without init value) has a constant value of 0 in block <wbgm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <adr_oI_24> (without init value) has a constant value of 0 in block <wbgm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <adr_oI_23> (without init value) has a constant value of 0 in block <wbgm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <adr_oI_22> (without init value) has a constant value of 0 in block <wbgm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <adr_oI_21> (without init value) has a constant value of 0 in block <wbgm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <adr_oI_20> (without init value) has a constant value of 0 in block <wbgm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <adr_oI_19> (without init value) has a constant value of 0 in block <wbgm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <adr_oI_18> (without init value) has a constant value of 0 in block <wbgm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <LMAS1> (without init value) has a constant value of 0 in block <U08>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <LGNT3> (without init value) has a constant value of 0 in block <U08>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <LGNT2> (without init value) has a constant value of 0 in block <U08>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <dataReg_3> of sequential type is unconnected in block <wbgm>.
+WARNING:Xst:2677 - Node <dataReg_7> of sequential type is unconnected in block <wbgm>.
+WARNING:Xst:2677 - Node <dataReg_11> of sequential type is unconnected in block <wbgm>.
+WARNING:Xst:2677 - Node <dataReg_15> of sequential type is unconnected in block <wbgm>.
+WARNING:Xst:2677 - Node <dataReg_19> of sequential type is unconnected in block <wbgm>.
+WARNING:Xst:2677 - Node <dataReg_23> of sequential type is unconnected in block <wbgm>.
+WARNING:Xst:2677 - Node <dataReg_27> of sequential type is unconnected in block <wbgm>.
+WARNING:Xst:2677 - Node <dataReg_31> of sequential type is unconnected in block <wbgm>.
+WARNING:Xst:2677 - Node <dataReg_3> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <dataReg_7> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <dataReg_11> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <dataReg_15> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <dataReg_19> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <dataReg_23> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <dataReg_27> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <dataReg_31> of sequential type is unconnected in block <wb_game>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# Multipliers                                          : 2
+ 10x11-bit multiplier                                  : 1
+ 3x2-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 414
+ 10-bit adder                                          : 1
+ 10-bit subtractor                                     : 2
+ 18-bit adder                                          : 2
+ 2-bit adder                                           : 160
+ 20-bit adder                                          : 2
+ 29-bit adder                                          : 1
+ 3-bit adder carry in                                  : 160
+ 32-bit adder                                          : 3
+ 4-bit adder                                           : 82
+ 7-bit adder                                           : 1
+# Counters                                             : 5
+ 10-bit up counter                                     : 2
+ 18-bit up counter                                     : 1
+ 31-bit up counter                                     : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 1728
+ Flip-Flops                                            : 1728
+# Comparators                                          : 253
+ 10-bit comparator greatequal                          : 4
+ 10-bit comparator less                                : 3
+ 10-bit comparator lessequal                           : 2
+ 31-bit comparator greatequal                          : 2
+ 31-bit comparator less                                : 2
+ 4-bit comparator equal                                : 80
+ 4-bit comparator greater                              : 160
+# Multiplexers                                         : 5
+ 1-bit 4-to-1 multiplexer                              : 2
+ 32-bit 4-to-1 multiplexer                             : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <adr_oI_18> (without init value) has a constant value of 0 in block <wb_game>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_oI_19> (without init value) has a constant value of 0 in block <wb_game>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_oI_20> (without init value) has a constant value of 0 in block <wb_game>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_oI_21> (without init value) has a constant value of 0 in block <wb_game>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_oI_22> (without init value) has a constant value of 0 in block <wb_game>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_oI_23> (without init value) has a constant value of 0 in block <wb_game>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_oI_24> (without init value) has a constant value of 0 in block <wb_game>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_oI_25> (without init value) has a constant value of 0 in block <wb_game>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_oI_26> (without init value) has a constant value of 0 in block <wb_game>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_oI_27> (without init value) has a constant value of 0 in block <wb_game>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_oI_28> (without init value) has a constant value of 0 in block <wb_game>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_oI_29> (without init value) has a constant value of 0 in block <wb_game>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_oI_30> (without init value) has a constant value of 0 in block <wb_game>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_oI_31> (without init value) has a constant value of 0 in block <wb_game>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <vcount_0> has a constant value of 0 in block <clock_divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <neighborsB_1_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_2_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_3_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_4_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_5_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_6_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_7_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_8_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_9_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_10_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_11_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_12_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_13_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_14_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_16_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_15_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_20_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_21_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_17_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_22_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_18_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_23_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_24_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_19_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_25_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_31_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_30_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_26_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_32_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_27_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_33_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_28_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_34_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_29_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_40_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_35_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_41_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_36_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_42_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_37_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_43_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_38_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_39_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_44_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_50_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_45_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_51_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_46_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_52_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_47_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_53_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_48_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_54_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_49_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_60_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_55_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_61_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_56_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_62_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_57_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_58_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_63_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_64_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_59_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_65_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_70_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_71_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_66_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_72_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_67_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_73_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_68_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_74_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_69_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_75_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_80_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_76_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_77_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_78_0> of sequential type is unconnected in block <wb_game>.
+WARNING:Xst:2677 - Node <neighborsB_79_0> of sequential type is unconnected in block <wb_game>.
+
+Optimizing unit <GameOfLife> ...
+
+Optimizing unit <wb_game> ...
+
+Optimizing unit <wb_arbiter> ...
+
+Optimizing unit <wb_intercon> ...
+
+Optimizing unit <vga640x480> ...
+WARNING:Xst:1710 - FF/Latch <wbint/U08/LGNT2> (without init value) has a constant value of 0 in block <GameOfLife>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <wbint/U08/LGNT3> (without init value) has a constant value of 0 in block <GameOfLife>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wbint/U08/LMAS1> (without init value) has a constant value of 0 in block <GameOfLife>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block GameOfLife, actual ratio is 121.
+Optimizing block <GameOfLife> to meet ratio 100 (+ 5) of 1920 slices :
+WARNING:Xst:2254 - Area constraint could not be met for block <GameOfLife>, final ratio is 109.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1760
+ Flip-Flops                                            : 1760
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : GameOfLife.ngr
+Top Level Output File Name         : GameOfLife
+Output Format                      : NGC
+Optimization Goal                  : Area
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 97
+
+Cell Usage :
+# BELS                             : 4822
+#      GND                         : 1
+#      INV                         : 85
+#      LUT1                        : 168
+#      LUT2                        : 268
+#      LUT3                        : 495
+#      LUT4                        : 2878
+#      MUXCY                       : 367
+#      MUXF5                       : 258
+#      VCC                         : 1
+#      XORCY                       : 301
+# FlipFlops/Latches                : 1760
+#      FDC                         : 77
+#      FDCE                        : 42
+#      FDE                         : 1635
+#      FDP                         : 1
+#      FDR                         : 4
+#      FDRE                        : 1
+# RAMS                             : 1
+#      RAMB16_S36_S36              : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 91
+#      IBUF                        : 8
+#      IOBUF                       : 24
+#      OBUF                        : 51
+#      OBUFT                       : 8
+# MULTs                            : 1
+#      MULT18X18                   : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                     2223  out of   1920   115% (*) 
+ Number of Slice Flip Flops:           1760  out of   3840    45%  
+ Number of 4 input LUTs:               3894  out of   3840   101% (*) 
+ Number of IOs:                          97
+ Number of bonded IOBs:                  92  out of    173    53%  
+ Number of BRAMs:                         1  out of     12     8%  
+ Number of MULT18X18s:                    1  out of     12     8%  
+ Number of GCLKs:                         2  out of      8    25%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+sys_clk                            | BUFGP                  | 1741  |
+wbvga/clk_divider/clk1             | BUFG                   | 20    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------+---------------------------+-------+
+Control Signal                         | Buffer(FF name)           | Load  |
+---------------------------------------+---------------------------+-------+
+sys_rst                                | IBUF                      | 93    |
+wbgm/state_or0000(wbgm/state_or00001:O)| NONE(wbgm/state_FSM_FFd24)| 27    |
+---------------------------------------+---------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 14.281ns (Maximum Frequency: 70.023MHz)
+   Minimum input arrival time before clock: 8.763ns
+   Maximum output required time after clock: 28.814ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sys_clk'
+  Clock period: 14.281ns (frequency: 70.023MHz)
+  Total number of paths / destination ports: 232947 / 2535
+-------------------------------------------------------------------------
+Delay:               14.281ns (Levels of Logic = 8)
+  Source:            wbgm/state_FSM_FFd15 (FF)
+  Destination:       wbgm/cache2_81 (FF)
+  Source Clock:      sys_clk rising
+  Destination Clock: sys_clk rising
+
+  Data Path: wbgm/state_FSM_FFd15 to wbgm/cache2_81
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.720   1.246  wbgm/state_FSM_FFd15 (wbgm/state_FSM_FFd15)
+     LUT4:I0->O            1   0.551   0.869  wbgm/dat_o_1_mux000011110 (wbgm/dat_o_1_mux000011110)
+     LUT4:I2->O            2   0.551   1.216  wbgm/dat_o_1_mux000011117 (wbgm/N449)
+     LUT4:I0->O            1   0.551   0.000  wbgm/cache2B_0_mux000011111 (wbgm/cache2B_0_mux00001111)
+     MUXF5:I0->O           3   0.360   0.933  wbgm/cache2B_0_mux00001111_f5 (wbgm/N448)
+     LUT4:I3->O            2   0.551   0.903  wbgm/cache0_mux0000<0>11 (wbgm/N348)
+     LUT4:I3->O          246   0.551   3.105  wbgm/cache0_mux0000<0>12 (wbgm/N11)
+     LUT4:I3->O            1   0.551   0.869  wbgm/cache2_mux0000<81>_SW0 (N194)
+     LUT3:I2->O            1   0.551   0.000  wbgm/cache2_mux0000<81> (wbgm/cache2_mux0000<81>)
+     FDE:D                     0.203          wbgm/cache2_81
+    ----------------------------------------
+    Total                     14.281ns (5.140ns logic, 9.141ns route)
+                                       (36.0% logic, 64.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'wbvga/clk_divider/clk1'
+  Clock period: 8.089ns (frequency: 123.625MHz)
+  Total number of paths / destination ports: 410 / 30
+-------------------------------------------------------------------------
+Delay:               8.089ns (Levels of Logic = 5)
+  Source:            wbvga/line_count_4 (FF)
+  Destination:       wbvga/line_count_9 (FF)
+  Source Clock:      wbvga/clk_divider/clk1 rising
+  Destination Clock: wbvga/clk_divider/clk1 rising
+
+  Data Path: wbvga/line_count_4 to wbvga/line_count_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.720   1.256  wbvga/line_count_4 (wbvga/line_count_4)
+     LUT4:I0->O            1   0.551   0.000  wbvga/display_valid31 (wbvga/display_valid3)
+     MUXF5:I0->O           2   0.360   1.072  wbvga/display_valid3_f5 (wbvga/N12)
+     LUT3:I1->O            2   0.551   0.945  wbvga/line_count_cmp_eq000011 (wbvga/N42)
+     LUT4:I2->O           10   0.551   1.329  wbvga/line_count_cmp_eq00001 (wbvga/line_count_cmp_eq0000)
+     LUT2:I1->O            1   0.551   0.000  wbvga/Mcount_line_count_eqn_91 (wbvga/Mcount_line_count_eqn_9)
+     FDCE:D                    0.203          wbvga/line_count_9
+    ----------------------------------------
+    Total                      8.089ns (3.487ns logic, 4.602ns route)
+                                       (43.1% logic, 56.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'sys_clk'
+  Total number of paths / destination ports: 4292 / 2014
+-------------------------------------------------------------------------
+Offset:              8.763ns (Levels of Logic = 2)
+  Source:            sys_rst (PAD)
+  Destination:       wbgm/addr_17 (FF)
+  Destination Clock: sys_clk rising
+
+  Data Path: sys_rst to wbgm/addr_17
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           107   0.821   2.622  sys_rst_IBUF (sys_rst_IBUF)
+     LUT2:I0->O          436   0.551   4.167  wbgm/state_or0000_inv1921 (wbgm/state_or0000_inv)
+     FDE:CE                    0.602          wbgm/addr_0
+    ----------------------------------------
+    Total                      8.763ns (1.974ns logic, 6.789ns route)
+                                       (22.5% logic, 77.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sys_clk'
+  Total number of paths / destination ports: 640 / 56
+-------------------------------------------------------------------------
+Offset:              16.037ns (Levels of Logic = 7)
+  Source:            wbgm/state_FSM_FFd22 (FF)
+  Destination:       sram_we (PAD)
+  Source Clock:      sys_clk rising
+
+  Data Path: wbgm/state_FSM_FFd22 to sram_we
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             21   0.720   1.541  wbgm/state_FSM_FFd22 (wbgm/state_FSM_FFd22)
+     LUT4:I3->O            3   0.551   0.933  wbgm/state_FSM_Out2711 (wbgm/N450)
+     LUT4:I3->O            2   0.551   0.903  wbgm/state_FSM_Out27_SW0 (N884)
+     LUT4:I3->O            8   0.551   1.278  wbgm/state_FSM_Out27 (cycT<1>)
+     LUT2:I1->O            1   0.551   0.000  wbint/STB_I_S_0_and0000_G (N960)
+     MUXF5:I1->O           3   0.360   1.102  wbint/STB_I_S_0_and0000 (stbS<0>)
+     LUT2:I1->O            1   0.551   0.801  wsrm/we1 (sram_we_OBUF)
+     OBUF:I->O                 5.644          sram_we_OBUF (sram_we)
+    ----------------------------------------
+    Total                     16.037ns (9.479ns logic, 6.558ns route)
+                                       (59.1% logic, 40.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'wbvga/clk_divider/clk1'
+  Total number of paths / destination ports: 479360 / 26
+-------------------------------------------------------------------------
+Offset:              28.814ns (Levels of Logic = 25)
+  Source:            wbvga/line_count_0 (FF)
+  Destination:       sram_we (PAD)
+  Source Clock:      wbvga/clk_divider/clk1 rising
+
+  Data Path: wbvga/line_count_0 to sram_we
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.720   1.256  wbvga/line_count_0 (wbvga/line_count_0)
+     LUT1:I0->O            1   0.551   0.000  wbvga/Msub_adr_o_addsub0001_cy<0>_rt (wbvga/Msub_adr_o_addsub0001_cy<0>_rt)
+     MUXCY:S->O            1   0.500   0.000  wbvga/Msub_adr_o_addsub0001_cy<0> (wbvga/Msub_adr_o_addsub0001_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  wbvga/Msub_adr_o_addsub0001_cy<1> (wbvga/Msub_adr_o_addsub0001_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  wbvga/Msub_adr_o_addsub0001_cy<2> (wbvga/Msub_adr_o_addsub0001_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  wbvga/Msub_adr_o_addsub0001_cy<3> (wbvga/Msub_adr_o_addsub0001_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  wbvga/Msub_adr_o_addsub0001_cy<4> (wbvga/Msub_adr_o_addsub0001_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  wbvga/Msub_adr_o_addsub0001_cy<5> (wbvga/Msub_adr_o_addsub0001_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  wbvga/Msub_adr_o_addsub0001_cy<6> (wbvga/Msub_adr_o_addsub0001_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  wbvga/Msub_adr_o_addsub0001_cy<7> (wbvga/Msub_adr_o_addsub0001_cy<7>)
+     MUXCY:CI->O           0   0.064   0.000  wbvga/Msub_adr_o_addsub0001_cy<8> (wbvga/Msub_adr_o_addsub0001_cy<8>)
+     XORCY:CI->O           9   0.904   1.124  wbvga/Msub_adr_o_addsub0001_xor<9> (wbvga/adr_o_addsub0001<9>)
+     MULT18X18:A9->P19    22   4.001   1.600  wbvga/Mmult_adr_o_mult0001 (wbvga/adr_o_mult0001<19>)
+     INV:I->O              0   0.551   0.000  wbvga/Madd_adr_o_not0000<19>1_INV_0 (wbvga/Madd_adr_o_not0000<19>)
+     XORCY:LI->O           1   0.622   0.801  wbvga/Madd_adr_o_add0000_xor<19> (wbvga/adr_o_add0000<19>)
+     INV:I->O              1   0.551   0.000  wbvga/adr_o_not0001<16>1_INV_0 (wbvga/adr_o_not0001<16>)
+     MUXCY:S->O            1   0.500   0.000  wbvga/Madd_adr_o_addsub0000_cy<16> (wbvga/Madd_adr_o_addsub0000_cy<16>)
+     MUXCY:CI->O           0   0.064   0.000  wbvga/Madd_adr_o_addsub0000_cy<17> (wbvga/Madd_adr_o_addsub0000_cy<17>)
+     XORCY:CI->O           3   0.904   1.102  wbvga/Madd_adr_o_addsub0000_xor<18> (wbvga/adr_o_addsub0000<18>)
+     LUT2:I1->O            1   0.551   0.000  wbvga/adr_o_mux0000<18>1_1 (wbvga/adr_o_mux0000<18>1_1)
+     MUXCY:S->O            1   0.500   0.000  wbvga/Madd_adr_o_cy<18> (wbvga/Madd_adr_o_cy<18>)
+     MUXCY:CI->O           0   0.064   0.000  wbvga/Madd_adr_o_cy<19> (wbvga/Madd_adr_o_cy<19>)
+     XORCY:CI->O          25   0.904   1.813  wbvga/Madd_adr_o_xor<20> (vgaAdd<20>)
+     MUXF5:S->O            3   0.621   1.102  wbint/STB_I_S_0_and0000 (stbS<0>)
+     LUT2:I1->O            1   0.551   0.801  wsrm/we1 (sram_we_OBUF)
+     OBUF:I->O                 5.644          sram_we_OBUF (sram_we)
+    ----------------------------------------
+    Total                     28.814ns (19.215ns logic, 9.599ns route)
+                                       (66.7% logic, 33.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 104.00 secs
+Total CPU time to Xst completion: 104.07 secs
+ 
+--> 
+
+Total memory usage is 282000 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  182 (   0 filtered)
+Number of infos    :   19 (   0 filtered)
+
